@@ -8,4 +8,5 @@ urlpatterns = [
     path('account/',include('app_login.urls')),
     # path('',views.index, name= "index"),
     path('',views.products, name= "products"),
+    path('product/',include('app_product.urls')),
 ]
