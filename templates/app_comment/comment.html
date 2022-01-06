@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'ecommerce/css/comment.css'%}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+		<div class="col-md-12" id="fbcomment">
+			<div class="header_comment">
+				<div class="row">
+					<div class="col-md-6 text-left">
+					  <span class="count_comment">264235 Comments</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="body_comment">
+				<div class="row">
+					<div class="avatar_comment col-md-12">
+
+
+                <div class="imgCircle">
+                 <span class="imgLetter">I</span>
+                 </div>
+
+                <div class="nameDiv">
+                  <span class="imgName">Israt Munny</span>
+                </div>
+
+					</div>
+					<div class="box_comment col-md-11">
+            <form  method="POST">
+				{% csrf_token %}
+              <!--<textarea class="commentar" placeholder="Add a comment..."></textarea>-->
+			  {{comment_form.m_comments}}
+              <div class="box_post">
+
+              <div class="pull-right">
+
+                <button type="submit" >Post</button>
+              </div>
+            </form>
+
+					  </div>
+					</div>
+				</div>
+				<div class="row">
+					<ul id="list_comment" class="col-md-12">
+						<!-- Start List Comment 1 -->
+						{% for com in allComment %}
+						<li class="box_result row">
+							<div class="avatar_comment col-md-1">
+								<img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+							</div>
+							<div class="result_comment col-md-11">
+								<h4>{{com.user}}</h4>
+								<p>{{com.m_comment}}</p>
+								<div class="tools_comment">
+									<a class="like" href="#">Like</a>
+									<span aria-hidden="true"> · </span>
+									<a class="replay" href="#" onclick="document.getElementById('replySection').style.visibility='visible'">Reply</a>
+									<span aria-hidden="true"> · </span>
+									<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span>
+									<span aria-hidden="true"> · </span>
+									<i class="fa fa-thumbs-o-down"></i> <span class="count">1</span>
+									<span aria-hidden="true"> · </span>
+									<span>26m</span>
+								</div>
+
+								<div id="replySection" >
+									<input type="text" placeholder="write your replay here....">
+									<button type="submit">post</button>
+								</div>
+								<ul class="child_replay">
+									<li class="box_reply row">
+										<div class="avatar_comment col-md-1">
+											<img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar" class="replyImg"/>
+										</div>
+										 <div class="result_comment col-md-11">
+											<h4>Sugito</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+											<div class="tools_comment">
+												<a class="like" href="#">Like</a>
+												<span aria-hidden="true"> · </span>
+												<a class="replay" href="#">Reply</a>
+												<span aria-hidden="true"> · </span>
+												<i class="fa fa-thumbs-o-up"></i> <span class="count">1</span>
+												<span aria-hidden="true"> · </span>
+												<span>26m</span>
+											</div>
+				
+											
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						{% endfor %}
+
+						
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+  </body>
+</html>

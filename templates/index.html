@@ -1,0 +1,576 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlbeans.com/html/schon/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 06:55:32 GMT -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Schön. | eCommerce HTML5 Template</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet"> 
+	
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.html">
+	<link rel="stylesheet" type="text/css" href="{% static 'ecommerce/css/bootstrap.css'%}">
+	<!-- <link rel="stylesheet" type="text/css" href="css/media.css"> -->
+	<style>
+		body{ font-family: 'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+		/* Slider */
+		.slick-slider{ position: relative; display: block; box-sizing: border-box; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+		.slick-list{ position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
+		.slick-list:focus{ outline: none; }
+		.slick-list.dragging{ cursor: pointer; cursor: hand; }
+		.slick-slider .slick-track, .slick-slider .slick-list{ -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+		.slick-track{ position: relative; top: 0; left: 0; display: block; }
+		.slick-track:before, .slick-track:after{ display: table; content: ''; }
+		.slick-track:after{ clear: both; }
+		.slick-loading .slick-track{ visibility: hidden; }
+		.slick-slide{ display: none; float: left; height: 100%; min-height: 1px; }
+		[dir='rtl'] .slick-slide{ float: right; }
+		.slick-slide img{ display: block; }
+		.slick-slide.slick-loading img{ display: none; }
+		.slick-slide.dragging img{ pointer-events: none; }
+		.slick-initialized .slick-slide{ display: block; }
+		.slick-loading .slick-slide{ visibility: hidden; }
+		.slick-vertical .slick-slide{ display: block; height: auto; border: 1px solid transparent; }
+		.slick-arrow.slick-hidden { display: none; }
+		#wrapper{ overflow: hidden; width: 100%; position: relative; }
+		#header{ padding: 20px 0; background: #fff; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+		.logo { overflow: hidden; margin: 10px 0 0; width: 103px; float: left; }
+		#header .nav-holder{ float: right; }
+		#nav{ overflow: hidden; display: inline-block; vertical-align: middle; font-size: 16px; font-weight: 600; position: relative; }
+		#nav ul{ overflow: hidden; margin:0;  } 
+		#nav ul li{ float: left; margin: 0 34px 0 0; }
+		#nav ul li a{ color: #223645; }
+		#nav ul li a:hover{ text-decoration: none; color: #f0437e; }
+		#header .btn-primary{ padding: 5px 20px; }
+		.btn-primary { font-size: 14px; line-height: 16px; color: #fff; border-radius: 45px; display: inline-block; vertical-align: middle; padding: 20px 40px; background: #ff6060; border: none; }
+		.btn-primary:hover { text-decoration: none; background: #808080; }
+		#main{ overflow: hidden; }
+		.banner-sec{ overflow: hidden; height: 900px; background-image: url(im/img01.jpg); background-size: cover; background-position: 50% 50%; }
+		.demo-sec{ padding-top: 80px; margin-bottom: 70px; overflow: hidden; }
+		.header{ margin: 0 0 40px; overflow: hidden; }
+		.header h2{ color: #223645; font-size: 38px; line-height: 50px; font-weight: 700; margin: 0 0 35px; padding: 0 0 30px; overflow: hidden; position: relative; }
+		.header h2:before{ position: absolute; content: ""; left: 50%; bottom: 0; width: 80px; height: 5px; background: #f0437e; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+		.demo-sec h3{ font-size: 25px; color: #000; font-weight: 600; line-height: 32px; margin: 0px; }
+		.demo-sec .content-wrap{ margin: 0 0 50px; padding: 0 0 20px; box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); border-radius: 10px; overflow: hidden; }
+		.demo-sec .content-wrap:hover{ box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); transition: all 300ms ease-in-out; transform: translateY(-4px); }
+		.demo-sec .wrap-img{ overflow: hidden; margin: 0 0 20px; }
+		.demo-sec .wrap-img a{ display: block; }
+		.page-layout{ padding: 120px 0px 110px 0px; position: relative; }
+		.page-layout:before{ position: absolute; content: ""; display: block; left: -9999px; right: -9999px; top: 0; bottom: 0; background: #f1f5fa; }
+		.page-layout .article-info{ padding-top: 100px; }
+		.page-layout h2{ font-size: 40px; line-height: 50px; color: #223645; font-weight: 700; margin: 0 0 30px; }
+		.page-layout .article-img{ width: 670px; }
+		.feature-sec{ padding-top: 80px; padding-bottom: 80px; overflow: hidden; }
+		.feature-sec img{ width: 150px; margin: 0 auto 40px; box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.2); border-radius: 10px; }
+		.review-sec{ padding: 200px 0px 160px 0px; overflow: hidden; background-position: 50% 50%; background-size: cover; background-attachment: fixed; font-size: 30px; color: #fff; text-align: center; font-weight: 700; }
+		.review-sec p{ margin-bottom: 40px; }
+		@media (max-width: 1199px) {
+			.banner-sec{ height: 680px; }
+			.page-layout .article-img{ width: 58.33333%; }
+		}
+		@media (max-width: 1023px) {
+			.page-layout{ padding-top: 80px; padding-bottom: 80px; }
+			.review-sec{ padding: 100px 0; }
+		}
+		@media (max-width: 767px) {
+			.banner-sec{ height: 340px; }
+			.btn-primary{ padding: 10px 15px; }
+			.logo{ margin: 8px 0 0; width: 90px; }
+			.header h2{ font-size: 30px; line-height: 40px; }
+			.demo-sec{ padding-top: 60px; }
+			.page-layout{ padding-top: 60px; padding-bottom: 60px; }
+			.page-layout .article-info{ padding-top: 0; }
+			.page-layout .article-img{ width: 100%; }
+			.demo-sec{ margin-bottom: 0; }
+			.review-sec{ padding: 50px 0; }
+			.review-sec .review-list{ font-size: 25px; }
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="logo">
+							<a href="index.html"><img src="{% static 'ecommerce/im/logo.png'%}" class="img-responsive" alt="Zuka"></a>
+						</div>
+						<div class="nav-holder">
+							<nav id="nav" class="hidden-xs">
+								<ul class="list-unstyled">
+									<li><a href="#welcome">Home</a></li>
+									<li><a href="#demo">Demo</a></li>
+									<li><a href="#demo2">Feature</a></li>
+									<li><a href="#demo3">Support</a></li>
+								</ul>
+							</nav>
+							<a class="btn-primary text-center" href="https://themeforest.net/item/schn-ecommerce-html-template-/17507338">Buy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section id="welcome" class="banner-sec">
+			</section>
+			<section id="demo" class="demo-sec container">
+				<div class="row">
+					<div class="col-xs-12 header text-center">
+						<h2>Amazing Demos</h2>
+						<p>If you believing in smart ideas and branding experiences, we prepared <br>for you very impressive and innovative home pages.</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage1.html" target="_blank"><img src="{% static 'ecommerce/im/preview-1.jpg'%}" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 1</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage2.html" target="_blank"><img src="im/preview-2.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 2</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage3.html" target="_blank"><img src="im/preview-3.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 3</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage4.html" target="_blank"><img src="im/preview-4.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 4</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage5.html" target="_blank"><img src="im/preview-5.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 5</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage6.html" target="_blank"><img src="im/preview-6.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 6</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage7.html" target="_blank"><img src="im/preview-7.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 7</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage8.html" target="_blank"><img src="im/preview-8.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 8</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage9.html" target="_blank"><img src="im/preview-9.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 9</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="homepage10.html" target="_blank"><img src="im/preview-10.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Home 10</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view.html" target="_blank"><img src="im/preview-11.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 1</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view2.html" target="_blank"><img src="im/preview-12.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 2</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view3.html" target="_blank"><img src="im/preview-13.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 3</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view4.html" target="_blank"><img src="im/preview-14.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 4</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view5.html" target="_blank"><img src="im/preview-15.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 5</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view6.html" target="_blank"><img src="im/preview-16.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 6</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view7.html" target="_blank"><img src="im/preview-17.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 7</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="product-grid-view8.html" target="_blank"><img src="im/preview-18.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Product Page 8</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="blog-fullwidth-page.html" target="_blank"><img src="im/preview-26.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Blog Page 5</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="blog-right-sidebar2.html" target="_blank"><img src="im/preview-27.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Blog Page 6</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="blog-postlist-3-masonry.html" target="_blank"><img src="im/preview-19.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Blog Page 1</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="blog-post-detail-sidebar.html" target="_blank"><img src="im/preview-20.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Blog Page 2</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="blog-post-detail-full-width.html" target="_blank"><img src="im/preview-21.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Blog Page 3</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="blog-right-sidebar.html" target="_blank"><img src="im/preview-22.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Blog Page 4</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="order-shopping-cart.html" target="_blank"><img src="im/preview-28.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Shopping Cart</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="order-checkout.html" target="_blank"><img src="im/preview-29.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Checkout</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="ordertracking.html" target="_blank"><img src="im/preview-30.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Order Tracking</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="wishlist.html" target="_blank"><img src="im/preview-31.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Wishlist</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="faq.html" target="_blank"><img src="im/preview-32.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>FAQ's</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="loginpage.html" target="_blank"><img src="im/preview-33.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Login</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="registerpage.html" target="_blank"><img src="im/preview-34.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Register</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="404-page.html" target="_blank"><img src="im/preview-35.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>404 Page 1</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="404-page2.html" target="_blank"><img src="im/preview-36.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>404 Page 2</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="404-page3.html" target="_blank"><img src="im/preview-37.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>404 Page 3</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="404-page4.html" target="_blank"><img src="im/preview-38.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>404 Page 4</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="404-page5.html" target="_blank"><img src="im/preview-39.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>404 Page 5</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="coming-soon.html" target="_blank"><img src="im/preview-40.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Coming Soon 1</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="coming-soon2.html" target="_blank"><img src="im/preview-41.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Coming Soon 2</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="about-us.html" target="_blank"><img src="im/preview-23.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>About Us</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="contact-us.html" target="_blank"><img src="im/preview-24.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Contact Us 1</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+						<div class="content-wrap">
+							<div class="wrap-img">
+								<a href="contact-us2.html" target="_blank"><img src="im/preview-25.jpg" class="img-responsive" alt="preview 1"></a>
+							</div>
+							<h3>Contact Us 2</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page-layout container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 article-info">
+						<h2>Page Layouts</h2>
+						<p>Follow us, We will update always our template with non-stop of building new demos.</p>
+					</div>
+					<div class="col-xs-12 col-sm-7 article-img">
+						<img src="im/img06.png" class="img-responsive" alt="img responsive">
+					</div>
+				</div>
+			</section>
+			<section id="demo2" class="feature-sec container">
+				<div class="row">
+					<div class="col-xs-12 header text-center">
+						<h2>Main Features</h2>
+						<p>We Provide Impressive Freatures For your Website. You can easily <br>manage Your website. You will love it.</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-1.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-2.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-3.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-4.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-5.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature6.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-7.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-8.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-9.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-10.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-11.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-12.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-13.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-14.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-15.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-16.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-17.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-18.jpg" alt="image description" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-3">
+						<img src="im/feature-19.jpg" alt="image description" class="img-responsive">
+					</div>
+				</div>
+			</section>
+			<section id="demo3" class="review-sec" style="background-image:url(im/img07.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<p>Create your first product with Kyata and Start your<br> website today!</p>
+							<a class="btn-primary" href="https://themeforest.net/item/schn-ecommerce-html-template-/17507338">Purchase Now</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+	<!-- <script src="js/jquery.main.js"></script> -->
+	<!-- <script>
+	  //  Move Bg
+		var scrollSpeed = 40;       // Speed in milliseconds
+		var step = 1;               // How many pixels to move per step
+		var current = 0;            // The current pixel row
+		var imageHeight = 3000;     // Background image height
+		var headerHeight = 300;     // How tall the header is.
+		
+		//The pixel row where to start a new loop
+		var restartPosition = -(imageHeight - headerHeight);
+		
+		function scrollBg(){
+			//Go to next pixel row.
+			current -= step;
+			//If at the End the image, then go to the top.
+			if (current == restartPosition){
+				current = 0;
+			}
+	
+			//Set the CSS of the header.
+			$('.banner-sec').css("background-position","0 "+current+"px");
+		}
+		
+		//Calls the scrolling function repeatedly
+		var init = setInterval("scrollBg()", scrollSpeed);  
+	
+	</script> -->
+</body>
+
+
+<!-- Mirrored from htmlbeans.com/html/schon/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 06:55:32 GMT -->
+</html>
