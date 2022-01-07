@@ -29,11 +29,11 @@
 We are Team-27 from CSE at JU, and We do content on Design and Development. We really enjoy learning languages and frameworks like Django, Js, CSS, Git as well as work in VS Code. We also enjoy to do work as a team. 
 ## Team Members
 1.`Md. Tazel Hossan` \
-2.`Md. Tazel Hossan` \
-3.`Md. Tazel Hossan` \
-4.`Md. Tazel Hossan` \
-5.`Md. Tazel Hossan` \
-6.`Md. Tazel Hossan` 
+2.`Mushfika Ikfat Munia` \
+3.`Israt Jahan Munny` \
+4.`Rubaiya Reza Sohana` \
+5.`Tabia Tanzin Prama` \
+6.`Manas Sarker Akash` 
 ## Skills and Experience
 * ⚛ Dajngo
 * 📱 VS Code
@@ -53,10 +53,10 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_munia.gif" width="512" >
 
 ### Feature-5: Bolg Page By Prema
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_tazel.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_prema.gif" width="512" >
 
 ### Feature-5: Bolg Page By Akash
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_tazel.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_akash.gif" width="512" >
 
 
 ![.github/workflows/main.yml](https://github.com/EddieJaoudeCommunity/awesome-github-profiles/workflows/.github/workflows/main.yml/badge.svg)
