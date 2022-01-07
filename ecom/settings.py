@@ -79,7 +79,8 @@ WSGI_APPLICATION = 'ecom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecom',
+        'NAME': 'ecommerce',
+        'HOST':'localhost',
         'USER':'root',
         'PASSWORD': '',
         'PORT':'3306',
@@ -128,5 +129,6 @@ STATICFILES_DIRS=[
 STATIC_DIR,
 ]
 
-MEDIA_ROOT=MEDIA_DIR
+
+MEDIA_ROOT=os.path.join(BASE_DIR,"media/")
 MEDIA_URL='/media/'
