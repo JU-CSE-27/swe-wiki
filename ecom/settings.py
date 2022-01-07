@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_login',
     'app_product',
+    'app_picture',
+    'uploadimg',
 ]
 
 MIDDLEWARE = [

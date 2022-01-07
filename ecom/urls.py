@@ -11,10 +11,13 @@ urlpatterns = [
     # path('',views.index, name= "index"),
 
     # path('',views.images, name= "images"),
-    # path('image/',include('app_product.urls')),
-    path('',views.products, name= "products"),
+    path('image/',include('app_product.urls')),
+    path('',views.index, name= "index"),
     path('product/',include('app_product.urls')),
     path('product/',views.products, name= "products"),
+    path('picture/',include('app_picture.urls')),
+    path('picture/',views.pictures, name= "pictures"),
+    path('upload/', views.uploadimage),
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
