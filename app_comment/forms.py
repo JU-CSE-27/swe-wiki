@@ -1,12 +1,28 @@
 from django import forms
 from app_comment.models import CommentModel, ReplyModel
-#comment form is created
+
+"""
+There is two form name commentForm,replyForm
+
+"""
+
 class commentForm(forms.ModelForm):
+    """
+	:form name:commentForm
+    :inherit: forms.ModelForm
+    """
+    
     class Meta:
         model=CommentModel
         fields=('m_comments',)
-#reply form is created
+
+
 class replyForm(forms.ModelForm):
+    """
+	:form name:replyForm
+    :inherit: forms.ModelForm
+    """
+ 
     class Meta:
         model=ReplyModel
         fields=('m_reply',)
