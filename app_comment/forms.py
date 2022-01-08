@@ -2,7 +2,7 @@ from django import forms
 from app_comment.models import CommentModel, ReplyModel
 
 """
-There is two form name commentForm,replyForm
+There are two form - commentForm,replyForm
 
 """
 
