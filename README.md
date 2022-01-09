@@ -55,7 +55,7 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 ### Feature-5: Shopping Cart Page By Munia
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_munia.gif" width="512" >
 
-### Feature-6: Bolg Page By Prema
+### Feature-6: Blog Page By Prema
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_prema.gif" width="512" >
 
 ### Feature-7: About Page By Akash
