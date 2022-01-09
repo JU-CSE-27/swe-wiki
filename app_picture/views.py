@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .form import PictureForm
 from .models import Picture
 
 # Create your views here.
