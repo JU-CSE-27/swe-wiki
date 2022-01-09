@@ -19,7 +19,9 @@ def comment_page(request):
     formComment=commentForm()
     formReply=replyForm()
     allComment=CommentModel.objects.all()
-   
+    currentUser=request.user
+    currentUname=currentUser.username
+    firshCharOfUname=currentUname[0]
 
 
     if request.method=='POST':
@@ -42,5 +44,5 @@ def comment_page(request):
 
 
 
-    return render(request,'app_comment/comment.html',context={ 'comment_form':formComment,'allComment':allComment,'reply_form':formReply})
+    return render(request,'app_comment/comment.html',context={ 'comment_form':formComment,'allComment':allComment,'reply_form':formReply,'firshCharOfUname': firshCharOfUname})
 
