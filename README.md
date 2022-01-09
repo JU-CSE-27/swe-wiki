@@ -44,7 +44,7 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_tazel.gif" width="512" >
 
 ### Feature-2: Event Page By Tazel
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_tazel.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature2_by_tazel.gif" width="512" >
 
 ### Feature-3: Home Page By Munny
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_munny.gif" width="512" >
