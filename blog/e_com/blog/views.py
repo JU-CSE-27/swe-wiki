@@ -12,7 +12,7 @@ Funtions name are blog , blog_detail and add_blog
 
 """
 
-def blog (request):
+def blog_page (request):
 
     """
     :param name: request
@@ -25,7 +25,7 @@ def blog (request):
     return render(request, 'home.html',context)
 
 
-def blog_detail(request , m_slug):
+def blog_detail_page (request , m_slug):
 
     """
     :param name: request , m_slug
@@ -42,11 +42,11 @@ def blog_detail(request , m_slug):
         print(e)    
     return render(request , 'blog_detail.html',context)
 
-def add_blog(request):
+def add_blog_page (request):
     """
     :param name: request
     :param type:url
-    : return:url , Dictionary
+    : return: url, Dictionary
 
     """
     context = {'form' : blogForm} 
