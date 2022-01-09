@@ -419,6 +419,8 @@
 
                 <form action="{% url 'contact'%}" method="POST" class="contact-form">
                   {% csrf_token %}
+											
+								{{form}}
                   <fieldset>
                     <input type="text" name="message_name" class="form-control" placeholder="Name">
                     <input type="email" name="message_email" class="form-control" placeholder="E-Mail">

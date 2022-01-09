@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from .contact import ContactForm
+
 
 """
 This is a function
@@ -32,18 +34,25 @@ def contact(request):
     :param type: url
     :return: url
     """
+    form = ContactForm()
     if request.method == "POST":
         message_name = request.POST['message_name']
         message_email = request.POST['message_email']
         message_subject = request.POST['message_subject']
         message = request.POST['message']
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
         #send mail
         """send_mail(
             message_name,#subject
             message,#messsage
             message_email, # from email
-            ['akash2169@gmail.com'], #to email
+            ['tazel@gmail.com'], #to email
         )"""
+        context = {'form':form}
+        
+        #return render(request, 'contact.html', context)
         return render(request, 'contact.html',{'message_name':message_name})
         
     else:
