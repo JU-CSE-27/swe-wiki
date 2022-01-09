@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block start %}
+
+<div class="row">
+    <div class="col-xs-12">
+        <!-- Blog Post of the Page -->
+
+        {% for blogs in blog %}
+
+        <article class="blog-post detail wow fadeInUp" data-wow-delay="0.4s">
+            <div class="img-holder">
+                <a href="{% url 'blog_detail' blogs.m_slug %}"><img src="/media/{{blogs.m_image}}" alt="image description"></a>
+                <ul class="list-unstyled comment-nav">
+                    <li><a href="#"><i class="fa fa-comments"></i>12</a></li>
+                    <li><a href="#"><i class="fa fa-share-alt"></i>14</a></li>
+                </ul>
+            </div>
+            <time class="time" datetime="2021-01-07 20:00"><strong>7</strong>January</time>
+            <div class="blog-txt">
+                <h2><a href="{% url 'blog_detail' blogs.m_slug %}"> {{blogs.m_title}} </a></h2>
+                <ul class="list-unstyled blog-nav">
+                    <li> <a href="#"><i class="fa fa-clock-o"></i>{{blogs.m_createdAt}}</a></li>
+                   
+                    <li> <a href="#"><i class="fa fa-comment"></i>2 Comments</a></li>
+                </ul>
+                <p>
+                    {{blogs.m_content | safe}}
+                </p>
+                <a href="{% url 'blog_detail' blogs.m_slug %}" class="btn-more">Read More</a>
+            </div>
+        </article>
+
+        {% endfor %}
+      
+        <!-- Blog Post of the Page end -->
+        <!-- Blog Post of the Page -->
+        <article class="blog-post detail wow fadeInUp" data-wow-delay="0.4s">
+            <div class="img-holder">
+                <a href="blog-post-detail-sidebar.html"><img src="/media/images/img08.jpg" alt="image description"></a>
+                <ul class="list-unstyled comment-nav">
+                    <li><a href="#"><i class="fa fa-comments"></i>12</a></li>
+                    <li><a href="#"><i class="fa fa-share-alt"></i>14</a></li>
+                </ul>
+            </div>
+            <time class="time" datetime="2016-02-03 20:00"><strong>25</strong>April</time>
+            <div class="blog-txt">
+                <h2><a href="blog-post-detail-sidebar.html">IDEAS FOR LIVING ROOMS</a></h2>
+                <ul class="list-unstyled blog-nav">
+                    <li> <a href="#"><i class="fa fa-clock-o"></i>20 April 2015</a></li>
+                    <li> <a href="#"><i class="fa fa-list"></i>Design</a></li>
+                    <li> <a href="#"><i class="fa fa-comment"></i>2 Comments</a></li>
+                </ul>
+                <p>Fusce mattis nunc lacus, vulputate facilisis dui efficitur ut. Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem. Morbi in erat malesuada, sollicitudin <br>massa at, tristique nisl. Maecenas id eros scelerisque, vulputate tortor quis, efficitur arcu</p>
+                <a href="blog-post-detail-sidebar.html" class="btn-more">Read More</a>
+            </div>
+        </article>
+        <!-- Blog Post of the Page end -->
+        <!-- Blog Post of the Page -->
+        <article class="blog-post detail wow fadeInUp" data-wow-delay="0.4s">
+            <div class="img-holder">
+                <a href="blog-post-detail-sidebar.html"><img src="/media/images/img09.jpg" alt="image description"></a>
+                <ul class="list-unstyled comment-nav">
+                    <li><a href="#"><i class="fa fa-comments"></i>12</a></li>
+                    <li><a href="#"><i class="fa fa-share-alt"></i>14</a></li>
+                </ul>
+            </div>
+            <time class="time" datetime="2016-02-03 20:00"><strong>25</strong>April</time>
+            <div class="blog-txt">
+                <h2><a href="blog-post-detail-sidebar.html">IDEAS FOR LIVING ROOMS</a></h2>
+                <ul class="list-unstyled blog-nav">
+                    <li> <a href="#"><i class="fa fa-clock-o"></i>20 April 2015</a></li>
+                    <li> <a href="#"><i class="fa fa-list"></i>Design</a></li>
+                    <li> <a href="#"><i class="fa fa-comment"></i>2 Comments</a></li>
+                </ul>
+                <p>Fusce mattis nunc lacus, vulputate facilisis dui efficitur ut. Vestibulum sit amet metus euismod, condimentum lectus id, ultrices sem. Morbi in erat malesuada, sollicitudin <br>massa at, tristique nisl. Maecenas id eros scelerisque, vulputate tortor quis, efficitur arcu</p>
+                <a href="blog-post-detail-sidebar.html" class="btn-more">Read More</a>
+            </div>
+        </article>
+        <!-- Blog Post of the Page end -->
+        <!-- Btn Holder of the Page -->
+        <div class="btn-holder">
+            <a href="#" class="btn-prev"><i class="fa fa-angle-left"></i> PREVIOUS</a>
+            <a href="#" class="btn-next">NEXT <i class="fa fa-angle-right"></i></a>
+        </div>
+        <!-- Btn Holder of the Page end -->
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}
