@@ -12,13 +12,14 @@
     <title>Hello, world!</title>
 </head>
 
-<!-- <body>
-    <h1>Hello, world!</h1>
+<body>
+<h1>Welcome to the website to see the admin added products</h1>
 
     <div class="container">
         {% for x in pics %}
-        <img src="{{x.pictures.url}}" class="img-fluid" alt="Responsive image">
-        <p class="lead">{{x.caption}}</p>
+        <img src="{{x.productImage.url}}" class="img-fluid" alt="Responsive image">
+        <p class="lead">{{x.productCaption}}</p>
+        <p class="lead">{{x.productPrice}}</p>
         <hr>
         {% endfor %}
     </div>
@@ -37,32 +38,4 @@
     -->
 </body>
 
-{% for x in pics %}
-    <div class="box">
-        <div class="b1">
-            <div class="b2">
-                <a href="product-detail.html"><img src="{{x.pictures.url}}" class="img-fluid" alt="Responsive image"></a>
-                <ul class="mt-stars">
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star-o"></i></li>
-                </ul>
-                <ul class="links">
-                    <li><a href="#"><i class="icon-handbag"></i><span>Add to
-                                Cart</span></a></li>
-                    <li><a href="#"><i class="icomoon icon-heart-empty"></i></a>
-                    </li>
-                    <li><a href="#"><i class="icomoon fa fa-comment-o"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="txt">
-        <strong class="title"><a href="product-detail.html"><p class="lead">{{x.caption}}</p></a></strong>
-        <span class="price"><i class="fa fa-dollar"></i> <span><p class="lead">{{x.caption}}</p></span></span>
-    </div>
-{% endfor %}
-
-
-
+</html>
