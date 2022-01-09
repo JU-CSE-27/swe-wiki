@@ -1,5 +1,5 @@
 from django.contrib import admin
-from shopping_cart.models import UiImage
+from shopping_cart.models import ImageShowModel
 
 # Register your models here.
-admin.site.register(UiImage)
+admin.site.register(ImageShowModel)

@@ -11,8 +11,8 @@ app_name='shopping_cart'
 
 
 urlpatterns = [
-    path('',views.cart,name='cart'),
-    path('',views.head,name='head'),
+    path('',views.cart_page,name='cart_page'),
+    path('',views.headImg_page,name='headImg_page'),
 
 	
 ]

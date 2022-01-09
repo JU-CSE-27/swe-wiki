@@ -11,3 +11,4 @@ class TestAppModels(TestCase):
         m_productQuantity=ProductModel.objects.create(m_productQuantity=4)
 
         self.assertEqual(str(m_productCaption),"Table")
+

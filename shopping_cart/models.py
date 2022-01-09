@@ -5,7 +5,13 @@ from django.db import models
 
 # model for header and logo
 
-class UiImage(models.Model):
-    name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to = 'UiImage/')
+class ImageShowModel(models.Model):
+    
+    """
+    :model name: ProductModel
+    :inherit: models.Model
+    """
+
+    m_imageShowName = models.CharField(max_length=100)
+    m_imageShowimage = models.ImageField(upload_to = 'UiImage/')
     
