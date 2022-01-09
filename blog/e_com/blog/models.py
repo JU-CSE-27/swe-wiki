@@ -2,6 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 from froala_editor.fields import FroalaField
 from .helpers import *
+"""
+: model name: BlogModel
+:inherit: models.Model
+
+"""
 
 class BlogModel(models.Model):
     m_title = models.CharField(max_length=1000)
