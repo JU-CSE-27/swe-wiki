@@ -43,19 +43,22 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 ### Feature-1: Contact Page By Tazel
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_tazel.gif" width="512" >
 
-### Feature-2: Home Page By Munny
+### Feature-2: Event Page By Tazel
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_tazel.gif" width="512" >
+
+### Feature-3: Home Page By Munny
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_munny.gif" width="512" >
 
-### Feature-3: Product Page By Sohana
+### Feature-4: Product Page By Sohana
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_sohana.gif" width="512" >
 
-### Feature-4: Shopping Cart Page By Munia
+### Feature-5: Shopping Cart Page By Munia
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_munia.gif" width="512" >
 
-### Feature-5: Bolg Page By Prema
+### Feature-6: Bolg Page By Prema
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_prema.gif" width="512" >
 
-### Feature-6: About Page By Akash
+### Feature-7: About Page By Akash
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_akash.gif" width="512" >
 
 
