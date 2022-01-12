@@ -19,6 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR=os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 MEDIA_DIR=os.path.join(BASE_DIR,'media')
+<<<<<<< HEAD
 # BKASH_APP_KEY = // bkash app key
 # BKASH_APP_SECRET = // bkash app secret
 # BKASH_APP_USERNAME = // bkash app username
@@ -28,6 +29,8 @@ MEDIA_DIR=os.path.join(BASE_DIR,'media')
 # BKASH_APP_PAYMENT_TOKEN_GRANT_URL = '%s/%s/checkout/token/grant' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
 # BKASH_APP_PAYMENT_CREATE_URL = '%s/%s/checkout/payment/create' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
 # BKASH_APP_PAYMENT_EXECUTE_URL = '%s/%s/checkout/payment/execute' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
+=======
+>>>>>>> bed44d0afa3ec01cd171905be06cae7f5c253dd6
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'mib%22dl#!o2$admx3yre0$1^-vpc7v*641_t#$r6$-6z*=tur'
@@ -50,7 +53,10 @@ INSTALLED_APPS = [
     'app_login',
     'sketch',
     'app_AddProduct',
+<<<<<<< HEAD
     'bkash',
+=======
+>>>>>>> bed44d0afa3ec01cd171905be06cae7f5c253dd6
 ]
 
 MIDDLEWARE = [
