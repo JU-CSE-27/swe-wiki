@@ -8,4 +8,7 @@ def index(request):
 def products(request):
     '''Takes a request and present that requested product showing page.'''
     return render (request,'products.html')
+def bkashs(request):
+    '''Takes a request and present that requested product showing page.'''
+    return render (request,'bkash_index.html')
   

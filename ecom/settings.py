@@ -13,29 +13,34 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 
 import os
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR=os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 MEDIA_DIR=os.path.join(BASE_DIR,'media')
-<<<<<<< HEAD
-# BKASH_APP_KEY = // bkash app key
-# BKASH_APP_SECRET = // bkash app secret
-# BKASH_APP_USERNAME = // bkash app username
-# BKASH_APP_PASSWORD = // bkash app password
-# BKASH_APP_VERSION = // bkash app version
-# BKASH_APP_BASE_URL = // bkash app base url
-# BKASH_APP_PAYMENT_TOKEN_GRANT_URL = '%s/%s/checkout/token/grant' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
-# BKASH_APP_PAYMENT_CREATE_URL = '%s/%s/checkout/payment/create' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
-# BKASH_APP_PAYMENT_EXECUTE_URL = '%s/%s/checkout/payment/execute' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
-=======
->>>>>>> bed44d0afa3ec01cd171905be06cae7f5c253dd6
+
+BKASH_APP_KEY = 'Sohana'
+BKASH_APP_SECRET = 'Sohana'
+BKASH_APP_USERNAME = 'Sohana'
+BKASH_APP_PASSWORD = 'Sohana'
+BKASH_APP_VERSION = 'Sohana'
+BKASH_APP_BASE_URL = 'Sohana'
+BKASH_APP_PAYMENT_TOKEN_GRANT_URL = '%s/%s/checkout/token/grant' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
+BKASH_APP_PAYMENT_CREATE_URL = '%s/%s/checkout/payment/create' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
+BKASH_APP_PAYMENT_EXECUTE_URL = '%s/%s/checkout/payment/execute' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'mib%22dl#!o2$admx3yre0$1^-vpc7v*641_t#$r6$-6z*=tur'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 's^2s%n2#d=bx5k)gbfityrum%_9-j43c!$3cx#g_)+oisotc#n'
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -53,10 +58,12 @@ INSTALLED_APPS = [
     'app_login',
     'sketch',
     'app_AddProduct',
-<<<<<<< HEAD
-    'bkash',
-=======
->>>>>>> bed44d0afa3ec01cd171905be06cae7f5c253dd6
+    'app_BkashPayment',
+    'payments',
+# <<<<<<< HEAD
+#     'bkash',
+# =======
+# >>>>>>> bed44d0afa3ec01cd171905be06cae7f5c253dd6
 ]
 
 MIDDLEWARE = [
@@ -149,3 +156,14 @@ STATIC_DIR,
 STATIC_URL = '/static/'
 MEDIA_ROOT=os.path.join(BASE_DIR,"media/")
 MEDIA_URL='/media/'
+
+
+PAYTM_MERCHANT_ID = 'AE567YGVB98YGHJI87YG'
+
+PAYTM_SECRET_KEY = 'f7cg897scsCSHScs'
+
+PAYTM_WEBSITE = 'WEBSTAGING'
+
+PAYTM_CHANNEL_ID = 'WEB'
+
+PAYTM_INDUSTRY_TYPE_ID = 'Retail'
