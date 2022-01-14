@@ -9,7 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/',include('app_login.urls')),
     path('shopping_cart/',include('shopping_cart.urls')),
-     path('blog/',include('blog.urls')),
+     path('blog/', include('blog.urls')),
     path('products/',include(('app_viewProduct.urls'),namespace='viewProduct')),
     path('',views.index, name= "index"),
 ]

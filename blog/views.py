@@ -20,7 +20,7 @@ def blog_page (request):
     """
     blog = BlogModel.objects.all()
     context = {'blog' : blog}
-    return render(request, 'home.html',context)
+    return render(request, 'app_blog/home.html',context)
 
 
 def blog_detail_page (request , m_slug):
@@ -38,7 +38,7 @@ def blog_detail_page (request , m_slug):
         context['blog_obj']=blog_obj
     except Exception as e:
         print(e)    
-    return render(request , 'blog_detail.html',context)
+    return render(request , 'app_blog/blog_detail.html',context)
 
 def add_blog_page (request):
     """
@@ -69,7 +69,7 @@ def add_blog_page (request):
 
     except Exception as e :
         print(e)       
-    return render(request , 'add_blog.html' , context)    
+    return render(request , 'app_blog/add_blog.html' , context)    
 
 
 
