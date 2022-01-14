@@ -4,7 +4,7 @@ from datetime import date
 
 class Venue(models.Model):
 	name = models.CharField('Venue Name', max_length=120)
-	address = models.CharField(max_length=300)
+	address = models.CharField(max_length=100)
 	zip_code = models.CharField('Zip Code', max_length=15)
 	phone = models.CharField('Contact Phone', max_length=25, blank=True)
 	web = models.URLField('Website Address', blank=True)

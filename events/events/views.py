@@ -275,8 +275,8 @@ def all_events(request):
 		{'event_list': event_list})
 
 
-def home(request, year=datetime.now().year, month=datetime.now().strftime('%B')):
-	name = "John"
+def event_home(request, year=datetime.now().year, month=datetime.now().strftime('%B')):
+	name = "Tazel"
 	month = month.capitalize()
 	# Convert month from name to number
 	month_number = list(calendar.month_name).index(month)
@@ -299,7 +299,7 @@ def home(request, year=datetime.now().year, month=datetime.now().strftime('%B'))
 	# Get current time
 	time = now.strftime('%I:%M %p')
 	return render(request, 
-		'events/home.html', {
+		'events/event_home.html', {
 		"name": name,
 		"year": year,
 		"month": month,

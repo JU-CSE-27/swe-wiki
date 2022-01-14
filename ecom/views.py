@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
-from .contact import ContactForm
+from .contact import contactForm
 
 
 """
@@ -34,13 +34,13 @@ def contact(request):
     :param type: url
     :return: url
     """
-    form = ContactForm()
+    form = contactForm()
     if request.method == "POST":
         message_name = request.POST['message_name']
         message_email = request.POST['message_email']
         message_subject = request.POST['message_subject']
         message = request.POST['message']
-        form = ContactForm(request.POST)
+        form = contactForm(request.POST)
         if form.is_valid():
             form.save()
         #send mail
@@ -57,3 +57,11 @@ def contact(request):
         
     else:
         return render(request, 'contact.html')
+
+def home(request):
+    """
+    :param name: request- render index page
+    :param type: url
+    :return: url
+    """
+    return render (request,'home.html')
