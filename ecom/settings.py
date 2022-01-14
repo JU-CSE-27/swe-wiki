@@ -21,15 +21,15 @@ TEMPLATES_DIR=os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 MEDIA_DIR=os.path.join(BASE_DIR,'media')
 
-BKASH_APP_KEY = 'Sohana'
-BKASH_APP_SECRET = 'Sohana'
-BKASH_APP_USERNAME = 'Sohana'
-BKASH_APP_PASSWORD = 'Sohana'
-BKASH_APP_VERSION = 'Sohana'
-BKASH_APP_BASE_URL = 'Sohana'
-BKASH_APP_PAYMENT_TOKEN_GRANT_URL = '%s/%s/checkout/token/grant' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
-BKASH_APP_PAYMENT_CREATE_URL = '%s/%s/checkout/payment/create' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
-BKASH_APP_PAYMENT_EXECUTE_URL = '%s/%s/checkout/payment/execute' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
+# BKASH_APP_KEY = 'Sohana'
+# BKASH_APP_SECRET = 'Sohana'
+# BKASH_APP_USERNAME = 'Sohana'
+# BKASH_APP_PASSWORD = 'Sohana'
+# BKASH_APP_VERSION = 'Sohana'
+# BKASH_APP_BASE_URL = 'Sohana'
+# BKASH_APP_PAYMENT_TOKEN_GRANT_URL = '%s/%s/checkout/token/grant' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
+# BKASH_APP_PAYMENT_CREATE_URL = '%s/%s/checkout/payment/create' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
+# BKASH_APP_PAYMENT_EXECUTE_URL = '%s/%s/checkout/payment/execute' % (BKASH_APP_BASE_URL, BKASH_APP_VERSION)
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'app_AddProduct',
     'app_BkashPayment',
     'payments',
+    'app_MakePayment',
 # <<<<<<< HEAD
 #     'bkash',
 # =======
@@ -84,6 +85,7 @@ TEMPLATES = [
         'DIRS': [TEMPLATES_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
+            
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -103,12 +105,18 @@ WSGI_APPLICATION = 'ecom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecommerce',
+        'NAME': 'sohana',
         'HOST':'localhost',
         'USER':'root',
         'PASSWORD': '',
         'PORT':'3306',
+        "OPTIONs": {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES', innodb_strict_mode=1",
+            'charset': 'utf8mb4',
+            "autocommit": True,
+        }
     }
+
 }
 
 

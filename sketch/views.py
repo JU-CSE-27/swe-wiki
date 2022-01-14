@@ -4,7 +4,16 @@ from .models import Sketch
 
 # Create your views here.
 def sketch_page(request):
-    '''Takes a request and present that requested seller or anyone added product showing page.'''
+    '''Takes a request and present that requested seller or anyone added product showing page.
+    Parameters
+    ----------
+    request:url
+
+    Return
+    ------
+    to a page with uploaded info
+    
+    '''
     if request.method == "POST":
        form=SketchForm(data=request.POST,files=request.FILES)
        if form.is_valid():

@@ -22,7 +22,7 @@ copyright = '2022, Rubaiya Reza Sohana'
 author = 'Rubaiya Reza Sohana'
 
 # The full version, including alpha/beta/rc tags
-release = '2025'
+release = '2022'
 
 
 # -- General configuration ---------------------------------------------------

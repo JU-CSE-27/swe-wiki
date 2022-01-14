@@ -4,6 +4,24 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class Transaction(models.Model):
+    '''
+    A class of transaction made for paytm
+
+    Attributes
+    ----------
+    made_by=str
+        the user info
+    made_on=datetimefield
+        the time of the transaction
+    amount=int
+        the amount the user has send
+    order_id=str
+        the id of the ordered product
+    checksum=str
+        the amount is okay with the required amount
+    
+    '''
+
     made_by = models.ForeignKey(User, related_name='transactions', 
                                 on_delete=models.CASCADE)
     made_on = models.DateTimeField(auto_now_add=True)

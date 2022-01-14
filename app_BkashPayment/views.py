@@ -8,7 +8,25 @@ from .models import BkashPayment, BkashTransaction
 
 
 class PaymentCreateApiView(APIView):
+    '''
+    A class creating payment creating APIVIEW
+
+    '''
     def post(self, request):
+        '''
+        A method which is post
+
+        Parameters
+        ----------
+        self:APIVIEW
+        request:url
+
+        Return
+        ------
+        if payment id is valid show HTTP_200_OK
+        else it returns HTTP_500_INTERNAL_SERVER_ERROR
+        
+        '''
         try:
             auth_body, auth_headers = bkash_utils.get_header_body_for_token_auth()
             auth_response = requests.post(
@@ -36,7 +54,24 @@ class PaymentCreateApiView(APIView):
 
 
 class PaymentExecuteApiView(APIView):
+    '''
+    A class creating payment executing APIVIEW
+    '''
     def post(self, request):
+        '''
+        A method which is post
+
+        Parameters
+        ----------
+        self:APIVIEW
+        request:url
+
+        Return
+        ------
+        if payment id is valid show HTTP_200_OK
+        else it returns HTTP_500_INTERNAL_SERVER_ERROR
+
+        '''
         try:
             if 'paymentID' not in request.data:
                 return Response(

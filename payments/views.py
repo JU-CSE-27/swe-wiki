@@ -7,6 +7,18 @@ from .paytm import generate_checksum, verify_checksum
 
 
 def initiate_payment(request):
+    '''
+    A method that initiate the payment which is done by paytm
+
+    Parameters
+    ----------
+    request:url
+
+    Returns
+    -------
+    to a page
+
+    '''
     if request.method == "GET":
         return render(request, 'payments/pay.html')
     try:
@@ -51,6 +63,17 @@ def initiate_payment(request):
 
 @csrf_exempt
 def callback(request):
+    '''
+    A method present the information of payment which is done by paytm
+
+    Parameters
+    ----------
+    request:url
+
+    Returns
+    to a page
+
+    '''
     if request.method == 'POST':
         paytm_checksum = ''
         print(request.body)
