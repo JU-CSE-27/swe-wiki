@@ -22,8 +22,23 @@ from reportlab.lib.pagesizes import letter
 from django.core.paginator import Paginator
 
 
+
+
+
 # Create My Events Page
+"""
+This is an events view
+-----------------------
+
+event function
+
+"""
 def my_events(request):
+	"""
+    :param name: request- render my_events page
+    :param type: url
+    :return: url
+    """
 	if request.user.is_authenticated:
 		me = request.user.id
 		events = Event.objects.filter(attendees=me)
@@ -38,6 +53,11 @@ def my_events(request):
 
 # Generate a PDF File Venue List
 def venue_pdf(request):
+	"""
+    :param name: request- render pdf file
+    :param type: url
+    :return: pdf
+    """
 	# Create Bytestream buffer
 	buf = io.BytesIO()
 	# Create a canvas
@@ -84,6 +104,11 @@ def venue_pdf(request):
 
 # Generate CSV File Venue List
 def venue_csv(request):
+	"""
+    :param name: request- render csv file
+    :param type: url
+    :return: csv
+    """
 	response = HttpResponse(content_type='text/csv')
 	response['Content-Disposition'] = 'attachment; filename=venues.csv'
 	
@@ -106,6 +131,11 @@ def venue_csv(request):
 
 # Generate Text File Venue List
 def venue_text(request):
+	"""
+    :param name: request- render text file
+    :param type: url
+    :return: text
+    """
 	response = HttpResponse(content_type='text/plain')
 	response['Content-Disposition'] = 'attachment; filename=venues.txt'
 	# Designate The Model
@@ -128,6 +158,11 @@ def venue_text(request):
 
 # Delete a Venue
 def delete_venue(request, venue_id):
+	"""
+    :param name: request- render venue
+    :param type: url
+    :return: list of venue
+    """
 	venue = Venue.objects.get(pk=venue_id)
 	venue.delete()
 	return redirect('list-venues')		
@@ -135,6 +170,11 @@ def delete_venue(request, venue_id):
 
 # Delete an Event
 def delete_event(request, event_id):
+	"""
+    :param name: request- render event
+    :param type: url
+    :return: list of event
+    """
 	event = Event.objects.get(pk=event_id)
 	if request.user == event.manager:
 		event.delete()
@@ -145,6 +185,11 @@ def delete_event(request, event_id):
 		return redirect('list-events')		
 
 def add_event(request):
+	"""
+    :param name: request- render add event page
+    :param type: url
+    :return: url
+    """
 	submitted = False
 	if request.method == "POST":
 		if request.user.is_superuser:
@@ -174,6 +219,11 @@ def add_event(request):
 
 
 def update_event(request, event_id):
+	"""
+    :param name: request- render update event page
+    :param type: url
+    :return: url
+    """
 	event = Event.objects.get(pk=event_id)
 	if request.user.is_superuser:
 		form = EventFormAdmin(request.POST or None, instance=event)	
@@ -190,6 +240,11 @@ def update_event(request, event_id):
 
 
 def update_venue(request, venue_id):
+	"""
+    :param name: request- render update venue page
+    :param type: url
+    :return: url
+    """
 	venue = Venue.objects.get(pk=venue_id)
 	form = VenueForm(request.POST or None, request.FILES or None, instance=venue)
 	if form.is_valid():
@@ -201,6 +256,11 @@ def update_venue(request, venue_id):
 		'form':form})
 
 def search_venues(request):
+	"""
+    :param name: request- render search venue page
+    :param type: url
+    :return: url
+    """
 	if request.method == "POST":
 		searched = request.POST['searched']
 		venues = Venue.objects.filter(name__contains=searched)
@@ -216,6 +276,11 @@ def search_venues(request):
 
 
 def search_events(request):
+	"""
+    :param name: request- render search event page
+    :param type: url
+    :return: url
+    """
 	if request.method == "POST":
 		searched = request.POST['searched']
 		events = Event.objects.filter(description__contains=searched)
@@ -231,6 +296,11 @@ def search_events(request):
 
 
 def show_venue(request, venue_id):
+	"""
+    :param name: request- render show venue page
+    :param type: url
+    :return: url
+    """
 	venue = Venue.objects.get(pk=venue_id)
 	venue_owner = User.objects.get(pk=venue.owner)
 	return render(request, 'events/show_venue.html', 
@@ -238,6 +308,11 @@ def show_venue(request, venue_id):
 		'venue_owner':venue_owner})
 
 def list_venues(request):
+	"""
+    :param name: request- render list venue page
+    :param type: url
+    :return: url
+    """
 	#venue_list = Venue.objects.all().order_by('?')
 	venue_list = Venue.objects.all()
 
@@ -253,6 +328,11 @@ def list_venues(request):
 		)
 
 def add_venue(request):
+	"""
+    :param name: request- render add venue page
+    :param type: url
+    :return: url
+    """
 	submitted = False
 	if request.method == "POST":
 		form = VenueForm(request.POST, request.FILES)
@@ -270,9 +350,16 @@ def add_venue(request):
 	return render(request, 'events/add_venue.html', {'form':form, 'submitted':submitted})
 
 def all_events(request):
+	"""
+    :param name: request- render all events page
+    :param type: url
+    :return: url
+    """
 	event_list = Event.objects.all().order_by('-event_date')
 	return render(request, 'events/event_list.html', 
 		{'event_list': event_list})
+
+
 
 
 def event_home(request, year=datetime.now().year, month=datetime.now().strftime('%B')):

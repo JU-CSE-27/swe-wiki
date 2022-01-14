@@ -4,8 +4,8 @@ from .contact import contactForm
 
 
 """
-This is a function
---------------
+This is a contact view
+----------------------
 
 index function
 
@@ -19,14 +19,6 @@ def index(request):
     :return: url
     """
     return render (request,'index.html')
-
-"""
-This is a Model
---------------
-
-Contact Model
-
-"""
 
 def contact(request):
     """
@@ -60,7 +52,7 @@ def contact(request):
 
 def home(request):
     """
-    :param name: request- render index page
+    :param name: request- render home page
     :param type: url
     :return: url
     """

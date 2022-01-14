@@ -1,7 +1,9 @@
-documention
-===========
+Documentation
+=============
 
 .. toctree::
    :maxdepth: 4
 
-   views
+   contact_views
+   event_views
+   livechat_views

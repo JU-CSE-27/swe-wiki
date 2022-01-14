@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect
 from .models import Room, Message
 from django.http import HttpResponse, JsonResponse
+
 """
-This is a home page
--------------------
+This is a livechat view
+-----------------------
 
 home function
 
@@ -16,13 +17,6 @@ def home(request):
     """
     return render(request, 'home.html')
 
-"""
-This is a room page
--------------------
-
-room function
-
-"""
 def room(request, room):
     """
     :param name: request- render room page
@@ -40,6 +34,11 @@ def room(request, room):
 
 
 def checkview(request):
+    """
+    :param name: request- render username
+    :param type: url
+    :return: none
+    """
     
     room = request.POST['room_name']
     username = request.POST['username']

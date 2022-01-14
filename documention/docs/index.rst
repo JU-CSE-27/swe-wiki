@@ -1,5 +1,5 @@
 .. Ecommerce documentation master file, created by
-   sphinx-quickstart on Fri Jan  7 23:43:36 2022.
+   sphinx-quickstart on Fri Jan 14 15:14:19 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -23,8 +23,15 @@ Installation
    :maxdepth: 2
 
    install
-   modules
+
+Documentation
+-------------
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
    
+   modules
 
 
 

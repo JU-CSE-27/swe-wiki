@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Installation &mdash; Ecommerce 1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>Installation &mdash; Ecommerce 1.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -16,8 +16,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="documention" href="modules.html" />
-    <link rel="prev" title="Welcome to Ecommerce’s documentation!" href="index.html" /> 
+    <link rel="next" title="Documentation" href="modules.html" />
+    <link rel="prev" title="Ecommerce Project" href="intro.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -35,15 +35,25 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Ecommerce Project</a></li>
+</ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#operating-systems">Operating systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installing-python">Installing python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-python-version-on-windows">Check Python Version on Windows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installing-modules">Installing modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-visual-studio-code">Installing Visual Studio Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-django-in-visual-studio-code">Installing Django in Visual Studio Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-our-django-project">Installing Our Django Project</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">documention</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Documentation</a></li>
 </ul>
 
         </div>
@@ -78,12 +88,13 @@ or individual files can be downloaded. Repository directories and files are desc
 <div class="section" id="operating-systems">
 <h2>Operating systems<a class="headerlink" href="#operating-systems" title="Permalink to this headline">¶</a></h2>
 <p>The Ecommerce python code is cross platform (Windows, Mac, Linux), and code for the <code class="code docutils literal notranslate"><span class="pre">View</span></code> and <code class="code docutils literal notranslate"><span class="pre">Model</span></code> packages has been
-tested on Windows (10) and Ubuntu (16.04) operating systems.
-Dependencies
-————</p>
+tested on Windows (10) operating systems.</p>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Python version 3.7.x is recommended.</p></li>
-<li><p>Python IDE:<cite>vs code</cite>.</p></li>
+<li><p>Python IDE:<cite>Visual Studio Code</cite>.</p></li>
 <li><p>Executable:repo:<cite>ecom</cite></p></li>
 </ol>
 </div>
@@ -91,7 +102,26 @@ Dependencies
 <h2>Installing python<a class="headerlink" href="#installing-python" title="Permalink to this headline">¶</a></h2>
 <p>Python can be installed from a number of sources, including <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>. Anaconda is another option which
 provides additional tools for python <a class="reference external" href="https://www.anaconda.com/download/">https://www.anaconda.com/download/</a>. This is a recommended option for novice users.
-Python version 2.7.x is recommended.</p>
+Python version 3.7.x is recommended.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">Step</span> <span class="mi">1</span><span class="p">:</span> <span class="n">Select</span> <span class="n">Version</span> <span class="n">of</span> <span class="n">Python</span> <span class="n">to</span> <span class="n">Install</span><span class="o">.</span>
+<span class="o">&gt;&gt;</span> <span class="n">Step</span> <span class="mi">2</span><span class="p">:</span> <span class="n">Download</span> <span class="n">Python</span> <span class="n">Executable</span> <span class="n">Installer</span><span class="o">.</span>
+<span class="o">&gt;&gt;</span> <span class="n">Step</span> <span class="mi">3</span><span class="p">:</span> <span class="n">Run</span> <span class="n">Executable</span> <span class="n">Installer</span><span class="o">.</span>
+<span class="o">&gt;&gt;</span> <span class="n">Step</span> <span class="mi">4</span><span class="p">:</span> <span class="n">Verify</span> <span class="n">Python</span> <span class="n">Was</span> <span class="n">Installed</span> <span class="n">On</span> <span class="n">Windows</span><span class="o">.</span>
+<span class="o">&gt;&gt;</span> <span class="n">Step</span> <span class="mi">5</span><span class="p">:</span> <span class="n">Verify</span> <span class="n">Pip</span> <span class="n">Was</span> <span class="n">Installed</span><span class="o">.</span>
+<span class="o">&gt;&gt;</span> <span class="n">Step</span> <span class="mi">6</span><span class="p">:</span> <span class="n">Add</span> <span class="n">Python</span> <span class="n">Path</span> <span class="n">to</span> <span class="n">Environment</span> <span class="n">Variables</span> <span class="p">(</span><span class="n">Optional</span><span class="p">)</span>
+<span class="o">&gt;&gt;</span> <span class="n">Step</span> <span class="mi">7</span><span class="p">:</span> <span class="n">Install</span> <span class="n">virtualnv</span> <span class="p">(</span><span class="n">Optional</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-python-version-on-windows">
+<h2>Check Python Version on Windows<a class="headerlink" href="#check-python-version-on-windows" title="Permalink to this headline">¶</a></h2>
+<p>To check if you already have Python on your Windows machine, first open a command-line application, such as PowerShell.
+With the command line open, type in the following command and press <code class="code docutils literal notranslate"><span class="pre">enter</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+<span class="go">or</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="installing-modules">
 <h2>Installing modules<a class="headerlink" href="#installing-modules" title="Permalink to this headline">¶</a></h2>
@@ -110,14 +140,46 @@ Python version 2.7.x is recommended.</p>
 <li><p>numpy <a class="reference external" href="https://docs.scipy.org/doc/">https://docs.scipy.org/doc/</a></p></li>
 </ul>
 </div>
+<div class="section" id="installing-visual-studio-code">
+<h2>Installing Visual Studio Code<a class="headerlink" href="#installing-visual-studio-code" title="Permalink to this headline">¶</a></h2>
+<p><code class="code docutils literal notranslate"><span class="pre">follow</span> <span class="pre">the</span> <span class="pre">link</span></code> <a class="reference external" href="https://code.visualstudio.com/docs">https://code.visualstudio.com/docs</a></p>
+</div>
+<div class="section" id="installing-django-in-visual-studio-code">
+<h2>Installing Django in Visual Studio Code<a class="headerlink" href="#installing-django-in-visual-studio-code" title="Permalink to this headline">¶</a></h2>
+<p><code class="code docutils literal notranslate"><span class="pre">follow</span> <span class="pre">the</span> <span class="pre">link</span></code> <a class="reference external" href="https://code.visualstudio.com/docs/python/tutorial-django">https://code.visualstudio.com/docs/python/tutorial-django</a></p>
+</div>
+<div class="section" id="installing-our-django-project">
+<h2>Installing Our Django Project<a class="headerlink" href="#installing-our-django-project" title="Permalink to this headline">¶</a></h2>
+<p>Download the progect from the github at <a class="reference external" href="https://github.com/JU-CSE-27/swe-wiki">https://github.com/JU-CSE-27/swe-wiki</a>.</p>
+<p>1. In the VS Code Terminal where your virtual environment is activated, run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">django</span><span class="o">-</span><span class="n">admin</span> <span class="n">startproject</span> <span class="n">ecom</span>
+</pre></div>
+</div>
+<p>2. Make development database migrations by running the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">makemigrations</span>
+</pre></div>
+</div>
+<p>3. Make development database models by running the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span>
+</pre></div>
+</div>
+<p>4. Reset Django admin password.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">createsuperuser</span>
+</pre></div>
+</div>
+<p>5. Run This Django project.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runserver</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Ecommerce’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="modules.html" class="btn btn-neutral float-right" title="documention" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="intro.html" class="btn btn-neutral float-left" title="Ecommerce Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modules.html" class="btn btn-neutral float-right" title="Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

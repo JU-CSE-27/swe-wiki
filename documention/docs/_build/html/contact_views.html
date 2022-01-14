@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>views module &mdash; Ecommerce 1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>contact_views module &mdash; Ecommerce 1.1 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -16,7 +16,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="documention" href="modules.html" /> 
+    <link rel="next" title="event_views module" href="event_views.html" />
+    <link rel="prev" title="sprint2_doc" href="modules.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -34,16 +35,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Ecommerce Project</a></li>
-</ul>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="modules.html">documention</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">views module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#this-is-a-function">This is a function</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">sprint2_doc</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">contact_views module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#this-is-a-contact-view">This is a contact view</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="event_views.html">event_views module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="livechat_views.html">livechat_views module</a></li>
 </ul>
 </li>
 </ul>
@@ -62,10 +62,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="modules.html">documention</a> &raquo;</li>
-      <li>views module</li>
+          <li><a href="modules.html">sprint2_doc</a> &raquo;</li>
+      <li>contact_views module</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/views.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/contact_views.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -73,14 +73,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-views">
-<span id="views-module"></span><h1>views module<a class="headerlink" href="#module-views" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="this-is-a-function">
-<h2>This is a function<a class="headerlink" href="#this-is-a-function" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="module-contact_views">
+<span id="contact-views-module"></span><h1>contact_views module<a class="headerlink" href="#module-contact_views" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="this-is-a-contact-view">
+<h2>This is a contact view<a class="headerlink" href="#this-is-a-contact-view" title="Permalink to this headline">¶</a></h2>
 <p>index function</p>
 <dl class="function">
-<dt id="views.contact">
-<code class="sig-prename descclassname">views.</code><code class="sig-name descname">contact</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#views.contact" title="Permalink to this definition">¶</a></dt>
+<dt id="contact_views.contact">
+<code class="sig-prename descclassname">contact_views.</code><code class="sig-name descname">contact</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#contact_views.contact" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -95,8 +95,24 @@
 </dd></dl>
 
 <dl class="function">
-<dt id="views.index">
-<code class="sig-prename descclassname">views.</code><code class="sig-name descname">index</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#views.index" title="Permalink to this definition">¶</a></dt>
+<dt id="contact_views.home">
+<code class="sig-prename descclassname">contact_views.</code><code class="sig-name descname">home</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#contact_views.home" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – request- render home page</p></li>
+<li><p><strong>type</strong> – url</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>url</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="contact_views.index">
+<code class="sig-prename descclassname">contact_views.</code><code class="sig-name descname">index</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#contact_views.index" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -111,8 +127,8 @@
 </dd></dl>
 
 <dl class="function">
-<dt id="views.my_events">
-<code class="sig-prename descclassname">views.</code><code class="sig-name descname">my_events</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#views.my_events" title="Permalink to this definition">¶</a></dt>
+<dt id="contact_views.my_events">
+<code class="sig-prename descclassname">contact_views.</code><code class="sig-name descname">my_events</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#contact_views.my_events" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -126,22 +142,6 @@
 </dl>
 </dd></dl>
 
-<dl class="function">
-<dt id="views.venue_pdf">
-<code class="sig-prename descclassname">views.</code><code class="sig-name descname">venue_pdf</code><span class="sig-paren">(</span><em class="sig-param">request</em><span class="sig-paren">)</span><a class="headerlink" href="#views.venue_pdf" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> – request- render event page</p></li>
-<li><p><strong>type</strong> – url</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>pdf</p>
-</dd>
-</dl>
-</dd></dl>
-
 </div>
 </div>
 
@@ -149,7 +149,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="modules.html" class="btn btn-neutral float-left" title="documention" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="modules.html" class="btn btn-neutral float-left" title="sprint2_doc" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="event_views.html" class="btn btn-neutral float-right" title="event_views module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
