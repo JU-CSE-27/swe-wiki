@@ -28,7 +28,7 @@
 ## Team-27
 We are Team-27 from CSE at JU, and We do content on Design and Development. We really enjoy learning languages and frameworks like Django, Js, CSS, Git as well as work in VS Code. We also enjoy to do work as a team. 
 ## Team Members
-1.`Md. Tazel Hossan` \
+1.`Md.Tazel Hossan` \
 2.`Mushfika Ikfat Munia` \
 3.`Israt Jahan Munny` \
 4.`Rubaiya Reza Sohana` \
@@ -38,6 +38,30 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 * ⚛ Dajngo
 * 📱 VS Code
 * 💻 HTML, CSS, JS
+
+Installing Our Django Project
+-----------------------------
+Download the progect from the github at https://github.com/JU-CSE-27/swe-wiki.
+
+1. In the VS Code Terminal where your virtual environment is activated, run the following command:<br>
+	
+	```django-admin startproject ecom```
+	
+2. Make development database migrations by running the following command:<br>
+
+	```python manage.py makemigrations```
+
+3. Make development database models by running the following command:<br>
+	
+	```python manage.py migrate```
+
+4. Reset Django admin password.<br>
+	
+	```python manage.py createsuperuser```
+	
+5. Run This Django project.<br>
+	
+	```python manage.py runserver```
 
 ## Examples of Work:
 ### Feature-1: Contact Page By Tazel
@@ -62,7 +86,7 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_akash.gif" width="512" >
 
 
-![.github/workflows/main.yml](https://github.com/EddieJaoudeCommunity/awesome-github-profiles/workflows/.github/workflows/main.yml/badge.svg)
 
-Team members for this project.\
+![.https://github.com/JU-CSE-27/swe-wiki/edit/main/README.md](https://github.com/EddieJaoudeCommunity/awesome-github-profiles/workflows/.github/workflows/main.yml/badge.svg)
+
 Feel free to submit a [pull request](https://github.com/JU-CSE-27/swe-wiki/pulls) with your suggestions of awesome GitHub profiles.
