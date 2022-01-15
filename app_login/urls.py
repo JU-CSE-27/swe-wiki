@@ -9,8 +9,11 @@ app_name='app_login'
 
 
 urlpatterns = [
-    path('home/', views.home, name="home"),
-	path('register/', views.registerPage, name="register"),
-    path('login/', views.loginPage, name="login"),  
-	path('logout/', views.logoutUser, name="logout"),
+    path('home/', views.home_page, name="home"),
+	path('register/', views.registration_Page, name="register"),
+    path('login/', views.login_page, name="login"),  
+	path('logout/', views.logout_page, name="logout"),
+	path('profile/', views.userProfile_page, name="profile"),
+	path('profile/edit/',views.editProfile_page, name="editProfile" ),
+	path('change-password/',views.changePassword_page, name="changePassword" ),
 ]

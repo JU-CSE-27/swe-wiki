@@ -1,5 +1,18 @@
 <html>
     <body>
         <h1>I am home page</h1>
+        {% block content%}
+        <ul>
+            <li> {{user}}</li>
+            <li>{{user.first_name}}</li>
+            <li>{{user.last_name}}</li>
+            <li>{{user.email}}</li>
+            <li><a href="">Logout</a></li>
+            
+            
+            
+        </ul>
+           
+        {%endblock%}
     </body>
 </html>

@@ -1,4 +1,6 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html lang="en">
 
 <!-- Mirrored from htmlbeans.com/html/schon/homepage1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 06:55:32 GMT -->
@@ -11,15 +13,15 @@
 	<!-- include the site stylesheet -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700' rel='stylesheet' type='text/css'>
 	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="{% static 'ecommerce/css/bootstrap.css'%}">
   <!-- include the site stylesheet -->
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="{% static 'ecommerce/css/animate.css'%}">
 	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/icon-fonts.css">
+	<link rel="stylesheet" href="{% static 'ecommerce/css/icon-fonts.css'%}">
 	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="{% static 'ecommerce/css/main.css' %}">
 	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="{% static 'ecommerce/css/responsive.css'%}">
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -27,7 +29,8 @@
 		<!-- Page Loader -->
 		<div id="pre-loader" class="loader-container">
 			<div class="loader">
-				<img src="images/svg/rings.svg" alt="loader">
+			
+				<img src="{% static 'ecommerce/images/svg/rings.svg'%}" alt="loader">
 			</div>
 		</div>
 		<!-- W1 start here -->
@@ -40,7 +43,7 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- mt logo start here -->
-								<div class="mt-logo"><a href="#"><img src="images/mt-logo.png" alt="schon"></a></div>
+								<div class="mt-logo"><a href="#"><img src="{% static 'ecommerce/images/mt-logo.png'%}" alt="schon"></a></div>
 								<!-- mt icon list start here -->
 								<ul class="mt-icon-list">
 									<li class="hidden-lg hidden-md">
@@ -61,7 +64,7 @@
 												<div class="mt-side-widget">
 													<!-- cart row start here -->
 													<div class="cart-row">
-														<a href="#" class="img"><img src="images/products/img36.jpg" alt="image" class="img-responsive"></a>
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img36.jpg'%}" alt="image" class="img-responsive"></a>
 														<div class="mt-h">
 															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
 															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
@@ -70,7 +73,7 @@
 													</div><!-- cart row end here -->
 													<!-- cart row start here -->
 													<div class="cart-row">
-														<a href="#" class="img"><img src="images/products/img37.jpg" alt="image" class="img-responsive"></a>
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img37.jpg'%}" alt="image" class="img-responsive"></a>
 														<div class="mt-h">
 															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
 															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
@@ -79,7 +82,7 @@
 													</div><!-- cart row end here -->
 													<!-- cart row start here -->
 													<div class="cart-row">
-														<a href="#" class="img"><img src="images/products/img38.jpg" alt="image" class="img-responsive"></a>
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img38.jpg'%}" alt="image" class="img-responsive"></a>
 														<div class="mt-h">
 															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
 															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
@@ -111,7 +114,7 @@
 												<div class="mt-side-widget">
 													<!-- cart row start here -->
 													<div class="cart-row">
-														<a href="#" class="img"><img src="images/products/img36.jpg" alt="image" class="img-responsive"></a>
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img36.jpg'%}" alt="image" class="img-responsive"></a>
 														<div class="mt-h">
 															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
 															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
@@ -121,7 +124,7 @@
 													</div><!-- cart row end here -->
 													<!-- cart row start here -->
 													<div class="cart-row">
-														<a href="#" class="img"><img src="images/products/img37.jpg" alt="image" class="img-responsive"></a>
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img37.jpg'%}" alt="image" class="img-responsive"></a>
 														<div class="mt-h">
 															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
 															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
@@ -131,7 +134,7 @@
 													</div><!-- cart row end here -->
 													<!-- cart row start here -->
 													<div class="cart-row">
-														<a href="#" class="img"><img src="images/products/img38.jpg" alt="image" class="img-responsive"></a>
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img38.jpg'%}" alt="image" class="img-responsive"></a>
 														<div class="mt-h">
 															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
 															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
@@ -167,155 +170,22 @@
 								<nav id="nav">
 									<ul>
 										<li>
-											<a class="drop-link" href="homepage1.html">HOME <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
-											<div class="s-drop">
-												<ul>
-													<li><a href="homepage1.html">Homepage1</a></li>
-													<li><a href="homepage2.html">homepage2</a></li>
-													<li><a href="homepage3.html">homepage3</a></li>
-													<li><a href="homepage4.html">homepage4</a></li>
-													<li><a href="homepage5.html">Homepage5</a></li>
-													<li><a href="homepage6.html">homepage6</a></li>
-													<li><a href="homepage7.html">homepage7</a></li>
-													<li><a href="homepage8.html">homepage8</a></li>
-													<li><a href="homepage9.html">homepage9</a></li>
-													<li><a href="homepage10.html">homepage10</a></li>
-												</ul>
-											</div>
+											
+											<a href="{% url 'viewProduct:home'%}">HOME</a>
+											
 										</li>
+										<li><a href="{% url 'viewProduct:latest'%}">PRODUCT</a></li>
+										
 										<li>
-											<a class="drop-link" href="product-grid-view.html">PRODUCTS <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
-											<div class="s-drop">
-												<ul>
-													<li><a href="product-grid-view.html">Product Grid View</a></li>
-													<li><a href="product-grid-view2.html">Product Grid View2</a></li>
-													<li><a href="product-grid-view3.html">Product Grid View3</a></li>
-													<li><a href="product-grid-view4.html">Product Grid View4</a></li>
-													<li><a href="product-grid-view5.html">Product Grid View5</a></li>
-													<li><a href="product-grid-view6.html">Product Grid View6</a></li>
-													<li><a href="product-grid-view7.html">Product Grid View7</a></li>
-												</ul>
-											</div>
+											<a href="#">BLOG</a>
 										</li>
-										<li>
-											<a class="drop-link" href="blog-right-sidebar.html">Blog <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
-											<div class="s-drop">
-												<ul>
-													<li><a href="blog-fullwidth-page.html">Blog Fullwidth Page</a></li>
-													<li><a href="blog-right-sidebar2.html">blog right sidebar2</a></li>
-													<li><a href="blog-postlist-3-masonry.html">blog postlist masonry</a></li>
-													<li><a href="blog-post-detail-sidebar.html">blog post detail sidebar</a></li>
-													<li><a href="blog-post-detail-full-width.html">blog post detail full width</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="drop">
-											<a href="#">PAGES <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-											<!-- mt dropmenu start here -->
-											<div class="mt-dropmenu text-left">
-												<!-- mt frame start here -->
-												<div class="mt-frame">
-													<!-- mt f box start here -->
-													<div class="mt-f-box">
-														<!-- mt col3 start here -->
-														<div class="mt-col-3">
-															<div class="sub-dropcont">
-																<strong class="title"><a href="product-grid-view.html" class="mt-subopener">Shop Pages</a></strong>
-																<div class="sub-drop">
-																	<ul>
-																		<li><a href="product-grid-view.html">Product Grid View</a></li>
-																		<li><a href="product-list-view.html">Product List View</a></li>
-																		<li><a href="product-quickview.html">Product QuickView popup</a></li>
-																		<li><a href="product-detail.html">Product Detail</a></li>
-																		<li><a href="product-detail2.html">Product Detail V2</a></li>
-																		<li><a href="order-shopping-cart.html">Shopping Cart</a></li>
-																		<li><a href="order-checkout.html">Checkout</a></li>
-																		<li><a href="ordertracking.html">Order Tracking</a></li>
-																		<li><a href="wishlist.html">Wish List</a></li>
-																		<li><a href="faq.html">FAQ Page</a></li>
-																		<li><a href="loginpage.html">Login Page</a></li>
-																		<li><a href="registerpage.html">Register Page</a></li>
-																		<li><a href="newsletter-popup.html">Newsletter Popup</a></li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-														<!-- mt col3 end here -->
-
-														<!-- mt col3 start here -->
-														<div class="mt-col-3">
-															<div class="sub-dropcont">
-																<strong class="title"><a href="#" class="mt-subopener">404 Pages</a></strong>
-																<div class="sub-drop">
-																	<ul>
-																		<li><a href="404-page.html">404 Page</a></li>
-																		<li><a href="404-page2.html">404 Page2</a></li>
-																		<li><a href="404-page3.html">404 Page3</a></li>
-																		<li><a href="404-page4.html">404 Page4</a></li>
-																		<li><a href="404-page5.html">404 Page5</a></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="sub-dropcont">
-																<strong class="title"><a href="#" class="mt-subopener">Coming Soon</a></strong>
-																<div class="sub-drop">
-																	<ul>
-																		<li><a href="coming-soon.html">Coming Soon</a></li>
-																		<li><a href="coming-soon2.html">Coming Soon2</a></li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-														<!-- mt col3 end here -->
-
-														<!-- mt col3 start here -->
-														<div class="mt-col-3">
-															<div class="sub-dropcont">
-																<strong class="title"><a href="#" class="mt-subopener">KITCHEN FURNITURE</a></strong>
-																<div class="sub-drop">
-																	<ul>
-																		<li><a href="#">Kitchen Taps</a></li>
-																		<li><a href="#">Breakfast time</a></li>
-																		<li><a href="#">Cooking</a></li>
-																		<li><a href="#">Food Storage Boxes</a></li>
-																		<li><a href="#">Spice Jars</a></li>
-																		<li><a href="#">Napskins</a></li>
-																		<li><a href="#">Oven Gloves</a></li>
-																		<li><a href="#">Placemats</a></li>
-																		<li><a href="#">Cooking</a></li>
-																		<li><a href="#">Food Storage Boxes</a></li>
-																		<li><a href="#">Spice Jars</a></li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-														<!-- mt col3 end here -->
-
-														<!-- mt col3 start here -->
-														<div class="mt-col-3 promo">
-															<div class="mt-promobox">
-																<a href="#"><img src="images/banner-drop.jpg" alt="promo banner" class="img-responsive"></a>
-															</div>
-														</div>
-														<!-- mt col3 end here -->
-													</div>
-													<!-- mt f box end here -->
-												</div>
-												<!-- mt frame end here -->
-											</div>
-											<!-- mt dropmenu end here -->
-											<span class="mt-mdropover"></span>
-										</li>
+										<li><a href="#">PAGE</a></li>
 										<li><a href="about-us.html">About</a></li>
 										<li>
-											<a class="drop-link" href="contact-us.html">Contact <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
-											<div class="s-drop">
-												<ul>
-													<li><a href="contact-us.html">Contact</a></li>
-													<li><a href="contact-us2.html">Contact 2</a></li>
-												</ul>
-											</div>
+											<a href="#">CONTACT</a>
 										</li>
+										<li><a href="{% url 'userLog:profile'%}">USER PROFILE</a></li>
+										
 									</ul>
 								</nav>
 								<!-- mt icon list end here -->
@@ -389,7 +259,7 @@
 				<!-- slider banner-slider start here -->
 				<div class="slider banner-slider">
 					<!-- holder start here -->
-					<div class="holder text-center" style="background-image: url(images/sliders/img04.jpg);">
+					<div class="holder text-center" style="background-image: url('{% static "ecommerce/images/sliders/img04.jpg"%}');">
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
@@ -409,7 +279,10 @@
 					<!-- holder end here -->
 
 					<!-- holder start here -->
-					<div class="holder text-center" style="background-image: url(images/sliders/img05.jpg);">
+					<div class="holder text-center" style="background-image: url('{% static "ecommerce/images/sliders/img04.jpg"%}');"></div>
+					
+					
+				
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
@@ -429,7 +302,7 @@
 					<!-- holder end here -->
 					
 					<!-- holder start here -->
-					<div class="holder text-center" style="background-image: url(images/sliders/img06.jpg);">
+					<div class="holder text-center" style="background-image: url('{% static "ecommerce/images/sliders/img06.jpg"%}');">
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12">
@@ -458,8 +331,8 @@
 							<!-- banner frame start here -->
 							<div class="banner-frame">
 								<!-- banner-1 start here -->
-								<div class="banner-1 wow fadeInLeft" data-wow-delay="0.4s">
-									<img alt="image description" src="images/banner/img01.jpg">
+								<div class="banner-1 wow fadeInLeft" data-wow-delay="0.4s">  
+									<img alt="image description" src="{% static 'ecommerce/images/banner/img01.jpg'%}">
 									<div class="holder">
 										<h2>MY SMALL WRITING <br>DESK</h2>
 										<div class="txts">
@@ -479,7 +352,7 @@
 								<div class="banner-box first">
 									<!-- banner-2 start here -->
 									<div class="banner-2 wow fadeInUp" data-wow-delay="0.4s">
-										<img alt="image description" src="images/banner/img02.jpg">
+										<img alt="image description" src="{% static 'ecommerce/images/banner/img02.jpg'%}">
 										<div class="holder">
 											<h2>MODULAR LOUNGE <br>TEAK</h2>
 											<span class="price">$ 129.00</span>
@@ -489,7 +362,7 @@
 
 									<!-- banner-3 start here -->
 									<div class="banner-3 right wow fadeInDown" data-wow-delay="0.4s">
-										<img alt="image description" src="images/banner/img03.jpg">
+										<img alt="image description" src="{% static 'ecommerce/images/banner/img03.jpg'%}">
 										<div class="holder">
 											<h2>Modular technical <br>fabric sofa</h2>
 											<a href="product-detail.html" class="shop">SHOP NOW</a>
@@ -501,7 +374,7 @@
 
 								<!-- banner-4 start here -->
 								<div class="banner-4 hidden-sm wow fadeInRight" data-wow-delay="0.4s">
-									<img alt="image description" src="images/banner/img04.jpg">
+									<img alt="image description" src="{% static 'ecommerce/images/banner/img04.jpg'%}">
 									<div class="holder">
 										<h2>Direct light <br>pendant lamp</h2>
 										<span class="price">$ 129.00</span>
@@ -522,6 +395,7 @@
 									<li><a href="#tab2">LATEST</a></li>
 									<li><a href="#tab3">BEST SELLER</a></li>
 								</ul>
+							
 								<!-- producttabs end here -->
 								<div class="tab-content text-center">
 									<div id="tab1">
@@ -534,7 +408,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img01.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img01.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="new">NEW</span>
 																</span>
@@ -562,7 +436,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img06.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img06.jpg'%}" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -592,7 +466,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img02.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img02.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -611,7 +485,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img07.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img07.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																</span>
@@ -638,7 +512,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img03.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img03.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -657,7 +531,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img08.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img08.jpg'%}" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -687,7 +561,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img04.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img04.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																	<span class="new">NEW</span>
@@ -716,7 +590,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img09.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img09.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -740,7 +614,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img05.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img05.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -759,7 +633,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img10.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img10.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -783,7 +657,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img02.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img02.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -802,7 +676,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img07.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img07.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																</span>
@@ -835,7 +709,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img06.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img06.jpg'%}" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -861,7 +735,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img01.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img01.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="new">NEW</span>
 																</span>
@@ -893,7 +767,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img07.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img07.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																</span>
@@ -916,7 +790,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img02.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img02.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -939,7 +813,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img08.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img08.jpg'%}" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -965,7 +839,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img03.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img03.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -988,7 +862,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img09.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img09.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1008,7 +882,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img04.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img04.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																	<span class="new">NEW</span>
@@ -1041,7 +915,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img10.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img10.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1061,7 +935,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img05.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img05.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1084,7 +958,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img07.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img07.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																</span>
@@ -1107,7 +981,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img02.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img02.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1136,7 +1010,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img01.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img01.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="new">NEW</span>
 																</span>
@@ -1164,7 +1038,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img06.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img06.jpg'%}" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -1194,7 +1068,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img07.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img07.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																</span>
@@ -1217,7 +1091,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img02.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img02.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1240,7 +1114,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img03.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img03.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1259,7 +1133,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img08.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img08.jpg'%}" alt="image description"></a>
 																<ul class="mt-stars">
 																	<li><i class="fa fa-star"></i></li>
 																	<li><i class="fa fa-star"></i></li>
@@ -1289,7 +1163,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img09.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img09.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1309,7 +1183,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img04.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img04.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																	<span class="new">NEW</span>
@@ -1342,7 +1216,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img05.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img05.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1361,7 +1235,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img10.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img10.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1385,7 +1259,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img07.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img07.jpg'%}" alt="image description"></a>
 																<span class="caption">
 																	<span class="off">15% Off</span>
 																</span>
@@ -1408,7 +1282,7 @@
 													<div class="box">
 														<div class="b1">
 															<div class="b2">
-																<a href="product-detail.html"><img src="images/products/img02.jpg" alt="image description"></a>
+																<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img02.jpg'%}" alt="image description"></a>
 																<ul class="links">
 																	<li><a href="#"><i class="icon-handbag"></i><span>Add to Cart</span></a></li>
 																	<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1451,7 +1325,7 @@
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="images/products/img11.jpg" alt="image description"></a>
+														<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img11.jpg'%}" alt="image description"></a>
 														<span class="caption">
 															<span class="best-price">Best Price</span>
 														</span>
@@ -1475,7 +1349,7 @@
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="images/products/img12.jpg" alt="image description"></a>
+														<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img12.jpg'%}" alt="image description"></a>
 														<ul class="links add">
 															<li><a href="#"><i class="icon-handbag"></i></a></li>
 															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1496,7 +1370,7 @@
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="images/products/img13.jpg" alt="image description"></a>
+														<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img13.jpg'%}" alt="image description"></a>
 														<ul class="links add">
 															<li><a href="#"><i class="icon-handbag"></i></a></li>
 															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1517,7 +1391,7 @@
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="images/products/img11.jpg" alt="image description"></a>
+														<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img11.jpg'%}" alt="image description"></a>
 														<span class="caption">
 															<span class="best-price">Best Price</span>
 														</span>
@@ -1541,7 +1415,7 @@
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="images/products/img12.jpg" alt="image description"></a>
+														<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img12.jpg'%}" alt="image description"></a>
 														<ul class="links add">
 															<li><a href="#"><i class="icon-handbag"></i></a></li>
 															<li><a href="#"><i class="icomoon icon-heart-empty"></i></a></li>
@@ -1562,7 +1436,7 @@
 											<div class="box">
 												<div class="b1">
 													<div class="b2">
-														<a href="product-detail.html"><img src="images/products/img13.jpg" alt="image description"></a>
+														<a href="product-detail.html"><img src="{% static 'ecommerce/images/products/img13.jpg'%}" alt="image description"></a>
 														<span class="caption">
 															<span class="off">15% Off</span>
 														</span>
@@ -1594,7 +1468,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img14.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img14.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1613,7 +1487,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img15.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img15.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1626,7 +1500,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img16.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img16.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1648,7 +1522,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img17.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img17.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1661,7 +1535,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img18.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img18.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1673,7 +1547,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img19.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img19.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1689,7 +1563,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img20.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img20.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1702,7 +1576,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img21.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img21.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1720,7 +1594,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img16.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img16.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1736,7 +1610,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img14.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img14.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1755,7 +1629,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img15.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img15.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1774,7 +1648,7 @@
 								<!-- mt product4 start here -->
 								<div class="mt-product4 mt-paddingbottom20">
 									<div class="img">
-										<a href="product-detail.html"><img alt="image description" src="images/products/img16.jpg"></a>
+										<a href="product-detail.html"><img alt="image description" src="{% static 'ecommerce/images/products/img16.jpg'%}"></a>
 									</div>
 									<div class="text">
 										<div class="frame">
@@ -1805,7 +1679,7 @@
 								<!-- F Widget About of the Page -->
 								<div class="f-widget-about">
 									<div class="logo">
-										<a href="#"><img src="images/logo.png" alt="Schon"></a>
+										<a href="#"><img src="{% static 'ecommerce/images/logo.png'%}" alt="Schon"></a>
 									</div>
 									<p>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 									<!-- Social Network of the Page -->
@@ -1888,7 +1762,7 @@
 							</div>
 							<div class="col-xs-12 col-sm-6 text-right">
 								<div class="bank-card">
-									<img src="images/bank-card.png" alt="bank-card">
+									<img src="{% static 'ecommerce/images/bank-card.png'%}" alt="bank-card">
 								</div>
 							</div>
 						</div>
@@ -1920,26 +1794,26 @@
 								<!-- Product Slider of the Page -->
 								<div class="product-slider">
 									<div class="slide">
-										<img src="images/img03.jpg" alt="image descrption">
+										<img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image descrption">
 									</div>
 									<div class="slide">
-										<img src="images/img03.jpg" alt="image descrption">
+										<img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image descrption">
 									</div>
 									<div class="slide">
-										<img src="images/img03.jpg" alt="image descrption">
+										<img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image descrption">
 									</div>
 									<div class="slide">
-										<img src="images/img03.jpg" alt="image descrption">
+										<img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image descrption">
 									</div>
 								</div><!-- Product Slider of the Page end -->
 								<!-- Pagg Slider of the Page -->
 								<ul class="list-unstyled slick-slider pagg-slider">
-									<li><img src="images/img03.jpg" alt="image description"></li>
-									<li><img src="images/img03.jpg" alt="image description"></li>
-									<li><img src="images/img03.jpg" alt="image description"></li>
-									<li><img src="images/img03.jpg" alt="image description"></li>
-									<li><img src="images/img03.jpg" alt="image description"></li>
-									<li><img src="images/img03.jpg" alt="image description"></li>
+									<li><img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image description"></li>
+									<li><img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image description"></li>
+									<li><img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image description"></li>
+									<li><img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image description"></li>
+									<li><img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image description"></li>
+									<li><img src="{% static 'ecommerce/images/img03.jpg'%}" alt="image description"></li>
 								</ul><!-- Pagg Slider of the Page end -->
 							</div><!-- Slider of the Page end -->
 							<!-- Detail Holder of the Page -->
@@ -2010,8 +1884,9 @@
 							</fieldset>
 						</form><!-- Newsletter Form of the Page -->
 					</div>
+					
 					<div class="img-holder">
-						<img src="images/img02.png" alt="image description">
+						<img src="{% static 'ecommerce/images/img02.png'%}" alt="image description">
 					</div>
 				</div><!-- Popup Form of the Page -->
 				<form action="#" class="popup-form">
@@ -2023,11 +1898,11 @@
 		</div><!-- Popup of the Page end -->
 	</div><!-- Popup Holder of the Page end -->
 	<!-- include jQuery -->
-	<script src="js/jquery.js"></script>
+	<script src="{% static 'ecommerce/js/jquery.js'%}"></script>
 	<!-- include jQuery -->
-	<script src="js/plugins.js"></script>
+	<script src="{% static 'ecommerce/js/plugins.js'%}"></script>
 	<!-- include jQuery -->
-	<script src="js/jquery.main.js"></script>
+	<script src="{% static 'ecommerce/js/jquery.main.js'%}"></script>
 </body>
 
 <!-- Mirrored from htmlbeans.com/html/schon/homepage1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 06:56:05 GMT -->
