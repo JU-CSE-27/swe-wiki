@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,8 +42,9 @@ INSTALLED_APPS = [
     'app_login',
     'shopping_cart',
     'app_viewProduct',
-    
+    'app_userProfile',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
