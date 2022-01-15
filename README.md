@@ -37,7 +37,7 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 ## Skills and Experience
 * ⚛ Dajngo
 * 📱 VS Code
-* 💻 HTML, CSS, JS
+* 💻 HTML, CSS, JS,Python
 
 Installing Our Django Project
 -----------------------------
