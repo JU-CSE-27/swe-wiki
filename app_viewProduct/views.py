@@ -14,8 +14,8 @@ def product_page(request):
         :param type:URL
         :return:URL,Dictionary
         """
-        pics = ProductModel.objects.all()
-        return render(request,'app_products/product-grid-view.html',{"pics":pics})
+        allProducts = ProductModel.objects.all()
+        return render(request,'app_products/product-grid-view.html',{"pics": allProducts})
 
 
 def latestProduct_page(request):
@@ -24,8 +24,8 @@ def latestProduct_page(request):
         :param type:URL
         :return:URL,Dictionary
         """
-        pics = ProductModel.objects.filter().order_by('id')
-        return render(request,'app_products/product-grid-view.html',{"pics":pics})
+        allProducts = ProductModel.objects.filter().order_by('id')
+        return render(request,'app_products/product-grid-view.html',{"pics": allProducts})
 
 def toLowProduct_page(request):
         """
@@ -33,8 +33,8 @@ def toLowProduct_page(request):
         :param type:URL
         :return:URL,Dictionary
         """
-        pics = ProductModel.objects.filter().order_by('-m_productPrice')
-        return render(request,'app_products/product-grid-view.html',{"pics":pics})
+        allProducts= ProductModel.objects.filter().order_by('-m_productPrice')
+        return render(request,'app_products/product-grid-view.html',{"pics": allProducts})
 
 def toHighProduct_page(request):
         """
@@ -42,8 +42,8 @@ def toHighProduct_page(request):
         :param type:URL
         :return:URL,Dictionary
         """
-        pics = ProductModel.objects.filter().order_by('m_productPrice')
-        return render(request,'app_products/product-grid-view.html',{"pics":pics})
+        allProducts = ProductModel.objects.filter().order_by('m_productPrice')
+        return render(request,'app_products/product-grid-view.html',{"pics": allProducts})
 
 
 def regularOffer_page(request):
@@ -52,8 +52,8 @@ def regularOffer_page(request):
         :param type:URL
         :return:URL,Dictionary
         """
-        pics = ProductModel.objects.filter(  m_regularDiscount__gt=0)
-        return render(request,'app_products/regularOffer.html',{"pics":pics})
+        allProducts = ProductModel.objects.filter(  m_regularDiscount__gt=0)
+        return render(request,'app_products/regularOffer.html',{"pics": allProducts})
 
 def stuOffer_page(request):
         """
@@ -61,8 +61,8 @@ def stuOffer_page(request):
         :param type:URL
         :return:URL,Dictionary
         """
-        pics = ProductModel.objects.filter( m_studentDiscount__gt=0)
-        return render(request,'app_products/stuOffer.html',{"pics":pics})
+        allProducts = ProductModel.objects.filter( m_studentDiscount__gt=0)
+        return render(request,'app_products/stuOffer.html',{"pics": allProducts})
 
 
 def eidOffer_page(request):
@@ -71,8 +71,8 @@ def eidOffer_page(request):
         :param type:URL
         :return:URL,Dictionary
         """
-        pics = ProductModel.objects.filter( m_eidDiscount__gt=0)
-        return render(request,'app_products/eidOffer.html',{"pics":pics})
+        allProducts = ProductModel.objects.filter( m_eidDiscount__gt=0)
+        return render(request,'app_products/eidOffer.html',{"pics": allProducts})
 
 
        
