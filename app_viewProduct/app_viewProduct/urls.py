@@ -12,6 +12,8 @@ urlpatterns = [
     path('regOffer/',views.regularOffer_page, name='regOffer' ),
     path('stuOffer/',views.stuOffer_page, name='stuOffer' ),
     path('eidOffer/',views.eidOffer_page, name='eidOffer' ),
+    path('search/',views.searchProduct_page,name='search'),
+
 
     ]
 
