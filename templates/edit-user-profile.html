@@ -1,0 +1,419 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlbeans.com/html/schon/product-grid-view.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 06:57:24 GMT -->
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Schön. | eCommerce HTML5 Template</title>
+	<!-- include the site stylesheet -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'ecommerce/css/bootstrap.css'%}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'ecommerce/css/animate.css'%}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'ecommerce/css/icon-fonts.css'%}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'ecommerce/css/main.css'%}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'ecommerce/css/responsive.css'%}">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- Page Loader -->
+		<div id="pre-loader" class="loader-container">
+			<div class="loader">
+				<img src="{% static 'ecommerce/images/svg/rings.svg'%}" alt="loader">
+			</div>
+		</div>
+		<!-- W1 start here -->
+		<div class="w1">
+			<!-- mt header style4 start here -->
+			<header id="mt-header" class="style4">
+				<!-- mt bottom bar start here -->
+				<div class="mt-bottom-bar">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- mt logo start here -->
+								<div class="mt-logo"><a href="#"><img src="{% static 'ecommerce/images/mt-logo.png'%}" alt="schon"></a></div>
+								<!-- mt icon list start here -->
+								<ul class="mt-icon-list">
+									<li class="hidden-lg hidden-md">
+										<a href="#" class="bar-opener mobile-toggle">
+											<span class="bar"></span>
+											<span class="bar small"></span>
+											<span class="bar"></span>
+										</a>
+									</li>
+									<li><a href="#" class="icon-magnifier"></a></li>
+									<li><a href="#" class="icon-heart"></a></li>
+									<li class="drop">
+										<a href="#" class="cart-opener">
+											<span class="icon-handbag"></span>
+											<span class="num">3</span>
+										</a>
+										<!-- mt drop start here -->
+										<div class="mt-drop">
+											<!-- mt drop sub start here -->
+											<div class="mt-drop-sub">
+												<!-- mt side widget start here -->
+												<div class="mt-side-widget">
+													<!-- cart row start here -->
+													<div class="cart-row">
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img36.jpg'%}" alt="image" class="img-responsive"></a>
+														<div class="mt-h">
+															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
+															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
+															<span class="mt-h-title">Qty: 1</span>
+														</div>
+														<a href="#" class="close fa fa-times"></a>
+													</div><!-- cart row end here -->
+													<!-- cart row start here -->
+													<div class="cart-row">
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img37.jpg'%}" alt="image" class="img-responsive"></a>
+														<div class="mt-h">
+															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
+															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
+															<span class="mt-h-title">Qty: 1</span>
+														</div>
+														<a href="#" class="close fa fa-times"></a>
+													</div><!-- cart row end here -->
+													<!-- cart row start here -->
+													<div class="cart-row">
+														<a href="#" class="img"><img src="{% static 'ecommerce/images/products/img38.jpg'%}" alt="image" class="img-responsive"></a>
+														<div class="mt-h">
+															<span class="mt-h-title"><a href="#">Marvelous Modern 3 Seater</a></span>
+															<span class="price"><i class="fa fa-eur" aria-hidden="true"></i> 599,00</span>
+															<span class="mt-h-title">Qty: 1</span>
+														</div>
+														<a href="#" class="close fa fa-times"></a>
+													</div><!-- cart row end here -->
+													<!-- cart row total start here -->
+													<div class="cart-row-total">
+														<span class="mt-total">Sub Total</span>
+														<span class="mt-total-txt"><i class="fa fa-eur" aria-hidden="true"></i> 799,00</span>
+													</div>
+													<!-- cart row total end here -->
+													<div class="cart-btn-row">
+														<a href="#" class="btn-type2">VIEW CART</a>
+														<a href="#" class="btn-type3">CHECKOUT</a>
+													</div>
+												</div><!-- mt side widget end here -->
+											</div>
+											<!-- mt drop sub end here -->
+										</div><!-- mt drop end here -->
+										<span class="mt-mdropover"></span>
+									</li>
+									<li>
+										<a href="#" class="bar-opener side-opener">
+											<span class="bar"></span>
+											<span class="bar small"></span>
+											<span class="bar"></span>
+										</a>
+									</li>
+								</ul><!-- mt icon list end here -->
+								<!-- navigation start here -->
+								<nav id="nav">
+									<ul>
+										<li>
+											
+											<a href="{% url 'viewProduct:home'%}">HOME</a>
+											
+										</li>
+										<li><a href="{% url 'viewProduct:latest'%}">PRODUCT</a></li>
+										
+										<li>
+											<a href="#">BLOG</a>
+										</li>
+										<li><a href="#">PAGE</a></li>
+										<li><a href="about-us.html">About</a></li>
+										<li>
+											<a href="#">CONTACT</a>
+										</li>
+										<li><a href="{% url 'app_login:profile'%}">USER PROFILE</a></li>
+										<li><a href="{% url 'app_login:register'%}">SignUp</a></li>
+										<li><a href="{% url 'app_login:login'%}">Sign In</a></li>
+										<li><a href="{% url 'app_login:logout'%}">Logout</a></li>
+										
+									</ul>
+								</nav>
+								<!-- mt icon list end here -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- mt bottom bar end here -->
+				<span class="mt-side-over"></span>
+			</header><!-- mt header style4 end here -->
+			<!-- mt side menu start here -->
+            <main>
+               
+                {% block content%}
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit">Submit</button>
+                </form>
+                   
+                {%endblock%}
+
+            </main>
+			<!-- mt main end here -->
+			<!-- footer of the Page -->
+			<footer id="mt-footer" class="style1 wow fadeInUp" data-wow-delay="0.4s">
+				<!-- Footer Holder of the Page -->
+				<div class="footer-holder dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 mt-paddingbottomsm">
+								<!-- F Widget About of the Page -->
+								<div class="f-widget-about">
+									<div class="logo">
+										<a href="index.html"><img src="{% static 'ecommerce/images/logo.png'%}" alt="Schon"></a>
+									</div>
+									<p>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									<!-- Social Network of the Page -->
+									<ul class="list-unstyled social-network">
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+									</ul>
+									<!-- Social Network of the Page end -->
+								</div>
+								<!-- F Widget About of the Page end -->
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mt-paddingbottomsm">
+								<div class="f-widget-news">
+									<h3 class="f-widget-heading">Twitter</h3>
+									<div class="news-articles">
+										<div class="news-column">
+											<i class="fa fa-twitter"></i>
+											<div class="txt-box">
+												<p>Laboris nisi ut <a href="#">#schön</a> aliquip econse- <br>quat. <a href="#">https://t.co/vreNJ9nEDt</a></p>
+											</div>
+										</div>
+										<div class="news-column">
+											<i class="fa fa-twitter"></i>
+											<div class="txt-box">
+												<p>Ficia deserunt mollit anim id est labo- <br>rum. incididunt ut labore et dolore <br><a href="#">https://t.co/vreNJ9nEDt</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mt-paddingbottomxs">
+								<!-- Footer Tabs of the Page -->
+								<div class="f-widget-tabs">
+									<h3 class="f-widget-heading">Product Tags</h3>
+									<ul class="list-unstyled tabs">
+										<li><a href="#">Sofas</a></li>
+										<li><a href="#">Armchairs</a></li>
+										<li><a href="#">Living</a></li>
+										<li><a href="#">Bedroom</a></li>
+										<li><a href="#">Lighting</a></li>
+										<li><a href="#">Tables</a></li>
+										<li><a href="#">Pouf</a></li>
+										<li><a href="#">Wood</a></li>
+										<li><a href="#">Office</a></li>
+										<li><a href="#">Outdoor</a></li>
+										<li><a href="#">Kitchen</a></li>
+										<li><a href="#">Stools</a></li>
+										<li><a href="#">Footstools</a></li>
+										<li><a href="#">Desks</a></li>
+									</ul>
+								</div>
+								<!-- Footer Tabs of the Page -->
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 text-right">
+								<!-- F Widget About of the Page -->
+								<div class="f-widget-about">
+									<h3 class="f-widget-heading">Information</h3>
+									<ul class="list-unstyled address-list align-right">
+										<li><i class="fa fa-map-marker"></i><address>Connaugt Road Central Suite 18B, 148 <br>New Yankee</address></li>
+										<li><i class="fa fa-phone"></i><a href="tel:15553332211">+1 (555) 333 22 11</a></li>
+										<li><i class="fa fa-envelope-o"></i><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#099;&#104;&#111;&#110;&#046;&#099;&#104;&#097;&#105;&#114;">&#105;&#110;&#102;&#111;&#064;&#115;&#099;&#104;&#111;&#110;&#046;&#099;&#104;&#097;&#105;&#114;</a></li>
+									</ul>
+								</div>
+								<!-- F Widget About of the Page end -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Holder of the Page end -->
+				<!-- Footer Area of the Page -->
+				<div class="footer-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<p>© <a href="index.html">schön.</a> - All rights Reserved</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 text-right">
+								<div class="bank-card">
+									<img src="images/bank-card.png" alt="bank-card">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Area of the Page end -->
+			</footer><!-- footer of the Page end -->
+		</div><!-- W1 end here -->
+		<span id="back-top" class="fa fa-arrow-up"></span>
+	</div>
+	 <!-- include jQuery -->
+	 <script src="{% static 'ecommerce/js/jquery.js'%}"></script>
+	 <!-- include jQuery -->
+	 <script src="{% static 'ecommerce/js/plugins.js'%}"></script>
+	 <!-- include jQuery -->
+	 <script src="{% static 'ecommerce/js/jquery.main.js'%}"></script>
+     
+<style type="text/css">
+    body{
+        background-color:#ecf2f5;
+        margin-top:20px;
+    }
+    .profile-card{
+        height: 350px;
+    }
+
+    .profile-body{
+        height: 250px;
+    }
+    
+    .card {
+        box-shadow: 0 0 2px 0 rgb(0 0 0 / 10%);
+        margin-bottom: 24px;
+    }
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid #ecf2f5;
+        border-radius: .25rem;
+    }
+    main{
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avatar-lg {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    .rounded-circle {
+        border-radius: 50%!important;
+    }
+    .img-thumbnail {
+        padding: .25rem;
+        background-color: #ecf2f5;
+        border: 1px solid #dee2e6;
+        border-radius: .25rem;
+        max-width: 100%;
+        height: auto;
+    }
+    .avatar-sm {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .rounded-circle {
+        border-radius: 50%!important;
+    }
+    .me-2 {
+        margin-right: .75rem!important;
+    }
+    .avatar-md {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .rounded-circle {
+        border-radius: 50%!important;
+    }
+    .bg-transparent {
+        --bs-bg-opacity: 1;
+        background-color: transparent!important;
+    }
+    .post-user-comment-box {
+        background-color: #f2f8fb;
+        margin: 0 -.75rem;
+        padding: 1rem;
+        margin-top: 20px;
+    }
+    .simplebar-wrapper {
+        overflow: hidden;
+        width: inherit;
+        height: inherit;
+        max-width: inherit;
+        max-height: inherit;
+    }
+    .simplebar-height-auto-observer-wrapper {
+        box-sizing: inherit!important;
+        height: 100%;
+        width: 100%;
+        max-width: 1px;
+        position: relative;
+        float: left;
+        max-height: 1px;
+        overflow: hidden;
+        z-index: -1;
+        padding: 0;
+        margin: 0;
+        pointer-events: none;
+        flex-grow: inherit;
+        flex-shrink: 0;
+        flex-basis: 0;
+    }
+    .font-13 {
+        font-size: 18px!important;
+    }
+    .btn-soft-info {
+        color: #45bbe0;
+        background-color: rgba(69,187,224,.18);
+        border-color: rgba(69,187,224,.12);
+    }
+    .social-list-item {
+        height: 2rem;
+        width: 2rem;
+        line-height: calc(2rem - 2px);
+        display: block;
+        border: 2px solid #adb5bd;
+        border-radius: 50%;
+        color: #adb5bd;
+    }
+    .comment-area-box .comment-area-btn {
+        background-color: #f2f8fb;
+        padding: 10px;
+        border: 1px solid #dee2e6;
+        border-top: none;
+        border-radius: 0 0 .2rem .2rem;
+    }
+    a{
+        text-decoration: none !important;
+    }
+    </style>
+    
+    <script type="text/javascript">
+    
+    </script>
+</body>
+
+<!-- Mirrored from htmlbeans.com/html/schon/product-grid-view.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 06:57:29 GMT -->
+</html>
