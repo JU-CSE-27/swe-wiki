@@ -4,9 +4,41 @@ from app_viewProduct.models import ProductModel
 # Create your views here.
 #viewing and sorting function
 """
-This is a view product and sorting page
-Functions name are product_page,latestProduct_page,toHighProduct_page
+This is a view product, Search Product and sorting product  page
+Functions name are product_page,searchProduct_page, latestProduct_page,toHighProduct_page
 """
+#search product
+def searchProduct_page(request):
+        
+        """
+        :param name:request
+        :param type:URL
+        :return:URL,Dictionary
+        """
+        query = request.GET['search']
+       
+        #pics = ProductModel.objects.all()
+        pics = ProductModel.objects.filter(m_productCaption__icontains= query).order_by('m_productPrice')
+        return render(request,'app_products/product-grid-view.html',{"pics":pics})
+
+
+#search product
+def searchProduct_page(request):
+        
+        """
+        :param name:request
+        :param type:URL
+        :return:URL,Dictionary
+        """
+        query = request.GET['search']
+       
+        #pics = ProductModel.objects.all()
+        pics = ProductModel.objects.filter(m_productCaption__icontains= query).order_by('m_productPrice')
+        return render(request,'app_products/product-grid-view.html',{"pics":pics})
+
+
+
+
 def product_page(request):
         
         """
