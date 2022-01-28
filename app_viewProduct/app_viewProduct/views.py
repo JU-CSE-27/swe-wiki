@@ -19,7 +19,7 @@ def searchProduct_page(request):
        
         #pics = ProductModel.objects.all()
         pics = ProductModel.objects.filter(m_productCaption__icontains= query).order_by('m_productPrice')
-        return render(request,'app_products/product-grid-view.html',{"pics":pics})
+        return render(request,'search_products/product-grid-view.html',{"pics":pics})
 
 
 #search product
