@@ -11,6 +11,10 @@ urlpatterns = [
     path('',views.index, name= "index"),
     path('products/',include(('app_viewProduct.urls'),namespace='viewProduct')),
     path('product/',include('app_products.urls')),
+    path('added/', include('app_AddProduct.urls'),  name= "addproduct"),
+    path('bkash/', include('app_BkashPayment.urls')),
+    path('makepayment/', include('app_MakePayment.urls')),
+
 ]
 
 if settings.DEBUG:
