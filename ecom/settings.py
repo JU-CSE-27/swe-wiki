@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'app_comment',
     'app_products',
     'app_viewProduct',
+    'app_AddProduct',
+    'app_BkashPayment',
+    'app_MakePayment',
+
 ]
 
 MIDDLEWARE = [
