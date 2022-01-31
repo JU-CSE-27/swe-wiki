@@ -10,5 +10,11 @@ class ProductModel(models.Model):
     m_productImage=models.ImageField(upload_to="img/%y")
     m_productPrice=models.FloatField(null=True)
     m_productQuantity=models.IntegerField(null=True)
-    def __str__(self):
-        return self.m_productCaption
+    #def __str__(self):
+        #return self.m_productCaption
+    
+    def get_excerpt(self, char):
+        return self.m_productCaption[:char]
+    
+
+
