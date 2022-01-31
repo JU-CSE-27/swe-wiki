@@ -3,8 +3,10 @@ from django.contrib.auth.forms import UserCreationForm,UserChangeForm
 from django.contrib.auth.models import User
 from django import forms
 
+
+
 """
-There are forms name User-create Form, User-data Edit Form
+This is Form page. Forms name are User-creation form, User-data change form
 
 """
 

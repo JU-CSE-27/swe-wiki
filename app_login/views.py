@@ -17,6 +17,7 @@ from django.contrib.auth.models import User
 from .models import *
 from .forms import CreateUserForm
 
+
 """
 There are  home page, registration page, login page,logout page
 Function name are home_page,registration_page, login_page,logout_page,userProfile_page,editProfile_page,changePassword_page
