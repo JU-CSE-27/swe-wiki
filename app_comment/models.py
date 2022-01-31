@@ -15,8 +15,9 @@ class CommentModel(models.Model):
      user=models.ForeignKey(User,on_delete=models.CASCADE,related_name='user_comment')
      m_comments=models.TextField()
      m_comment_date=models.DateTimeField(auto_now_add=True)
-     def __str__(self):
-         return self.m_comments
+     def get_excerpt(self, char):
+        return self.m_comments[:char]
+  
 
 
 
@@ -31,6 +32,7 @@ class ReplyModel(models.Model):
      m_comment=models.ForeignKey(CommentModel,on_delete=models.CASCADE,related_name='reply_comment')
      m_reply=models.TextField()
      m_reply_date=models.DateTimeField(auto_now_add=True, null=True)
+     def get_excerpts(self, char):
+        return self.m_reply[:char]
 
-     def __str__(self):
-         return self.m_reply
+   

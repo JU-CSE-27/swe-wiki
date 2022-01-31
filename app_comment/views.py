@@ -3,11 +3,16 @@ from app_comment.models import CommentModel,ReplyModel
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth.decorators import login_required
 from app_comment.forms import commentForm,replyForm
+from django.views.generic import TemplateView
 
 """
 This is a review page
 Function name is comment_page
+
 """
+
+class HomeView(TemplateView):
+    template_name='homepage1.html'
 
 def comment_page(request):
     """

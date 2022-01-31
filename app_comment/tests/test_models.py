@@ -1,14 +1,18 @@
-from django.test import TestCase
+import pytest 
 from app_comment.models import CommentModel,ReplyModel
 from django.contrib.auth.models import User
+from mixer.backend.django import mixer 
+pytestmark = pytest.mark.django_db 
+class TestPost: 
+    def test_model(self): 
+        obj = mixer.blend('app_comment.CommentModel') 
+        assert obj.pk == 1, 'Should create a Post instance'
+    def test_get_excerpt(self):
+        obj = mixer.blend('app_comment.CommentModel', m_comments="shirt is nice")
+        result = obj.get_excerpt(5)
+        assert result == 'shirt', 'Should return first few charecters'
 
-class TestAppModels(TestCase):
-    def test_model_str(self):
-        user=User.objects.create(username="testuser", password="12345")
-        m_comments=CommentModel.objects.create(user=user, m_comments="My watch is like as image")
-        self.assertEqual(str(m_comments),"My watch is like as image")
-
-    def test_model_reply(self):
-        user=User.objects.create(username="testuser", password="12345")
-        m_comments=CommentModel.objects.create(user=user,m_comments="My watch is like as image")
-        m_reply=ReplyModel.objects.create(user=user,m_comment=m_comments,m_reply="You are lucky")
+    def test_get_excerpts(self):
+        obj = mixer.blend('app_comment.ReplyModel', m_comments="shirt is nice")
+        result = obj.get_excerpts(5)
+        assert result == 'shirt', 'Should return first few charecters'
