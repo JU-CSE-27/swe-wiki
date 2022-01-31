@@ -4,25 +4,26 @@
 
 <p align="center">
   <a href="https://github.com/JU-CSE-27/swe-wiki" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/built-with-love.svg"/>
+    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/built-with-love.svg"/>
+	  
  </a>
   <a href="https://github.com/JU-CSE-27/swe-wiki" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/made-with-markdown.svg"/>
+    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/made-with-markdown.svg"/>
  </a>
   <a href="https://github.com/JU-CSE-27/swe-wiki" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/open-source.svg"/>
+    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/open-source.svg"/>
  </a>
  <br />
  <a href="https://github.com/JU-CSE-27/swe-wiki" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/check-it-out.svg" />
+    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg" />
  </a>
   <a href="https://github.com/JU-CSE-27/swe-wiki" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/built-by-developers.svg"/>
+    <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/built-by-developers.svg"/>
  </a>
 </p>
 
 <p align="center">
-  <img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/shopping.gif" height="300" />
+  <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/shopping.gif" height="300" />
 </p>
 
 ## Team-27
@@ -65,25 +66,25 @@ Download the progect from the github at https://github.com/JU-CSE-27/swe-wiki.
 
 ## Examples of Work:
 ### Feature-1: Contact Page By Tazel
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_tazel.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/feature_by_tazel.gif" width="512" >
 
 ### Feature-2: Event Page By Tazel
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature2_by_tazel.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/feature2_by_tazel.gif" width="512" >
 
 ### Feature-3: Home Page By Munny
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_munny.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/feature_by_munny.gif" width="512" >
 
 ### Feature-4: Product Page By Sohana
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_sohana.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/feature_by_sohana.gif" width="512" >
 
 ### Feature-5: Shopping Cart Page By Munia
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_munia.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/feature_by_munia.gif" width="512" >
 
 ### Feature-6: Blog Page By Prema
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_prema.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/feature_by_prema.gif" width="512" >
 
 ### Feature-7: About Page By Akash
-<img src="https://github.com/JU-CSE-27/swe-wiki/blob/main/resources/feature_by_akash.gif" width="512" >
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/feature_by_akash.gif" width="512" >
 
 
 
