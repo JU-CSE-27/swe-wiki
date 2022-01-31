@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
 import os
 
 
@@ -31,20 +30,18 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.sites',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_login',
-    'shopping_cart',
     'app_viewProduct',
-    'app_userProfile',
+    
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,7 +80,7 @@ WSGI_APPLICATION = 'ecom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecommercedb',
+        'NAME': 'tddecom',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',

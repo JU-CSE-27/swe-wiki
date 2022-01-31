@@ -10,13 +10,9 @@ app_name='app_viewProduct'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/',include(('app_login.urls'),namespace='userLog')),
-    path('shopping_cart/',include('shopping_cart.urls')),
     path('products/',include(('app_viewProduct.urls'),namespace='viewProduct')),
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 81a0ce53034d1a5f5003e5222084c40ad0d2f602
     path('',views.index, name= "index"),
 ]
 
