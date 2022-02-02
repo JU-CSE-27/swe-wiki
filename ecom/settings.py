@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_login',
     'app_comment',
-    'app_products',
+#     'app_products',
     'app_viewProduct',
     'app_AddProduct',
     'app_BkashPayment',
