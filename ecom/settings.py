@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 #     'app_products',
     'app_viewProduct',
     'app_AddProduct',
-    'app_BkashPayment',
+#     'app_BkashPayment',
     'app_MakePayment',
 
 ]
