@@ -31,14 +31,14 @@ We are Team-27 from CSE at JU, and We do content on Design and Development. We r
 ## Team Members
 1.`Md.Tazel Hossan` \
 2.`Mushfika Ikfat Munia` \
-3.`Israt Jahan Munny` \
-4.`Rubaiya Reza Sohana` \
+3.`Rubaiya Reza Sohana` \
+4.`Israt Jahan Munny` \
 5.`Tabia Tanzin Prama` \
 6.`Manas Sarker Akash` 
 ## Skills and Experience
 * ⚛ Dajngo
 * 📱 VS Code
-* 💻 HTML, CSS, JS,Python
+* 💻 HTML, CSS, JS,Python,Bootstrap
 
 Installing Our Django Project
 -----------------------------
@@ -48,7 +48,7 @@ Download the progect from the github at https://github.com/JU-CSE-27/swe-wiki.
 	
 	```django-admin startproject ecom```
 	
-2. Make development database migrations by running the following command:<br>
+2. Make database migrations by running the following command:<br>
 
 	```python manage.py makemigrations```
 
