@@ -95,10 +95,10 @@ Wiki Pages:<br>
 Coding Standard:<br>
 [![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/Updated_coding-standard.pdf)
 <br>
-Test Driven Development(TDD) Report:<br>
+TDD Report:<br>
 [![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://sew-tdd.netlify.app/)
 <br>
-Test Driven Development(TDD) Doc:<br>
+TDD Doc:<br>
 [![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/TDD.pdf)
 <br>
 Documentation Site:<br>
