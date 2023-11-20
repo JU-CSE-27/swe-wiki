@@ -88,9 +88,20 @@ Download the progect from the github at https://github.com/JU-CSE-27/swe-wiki.
 
 
 
-![.https://github.com/JU-CSE-27/swe-wiki/edit/main/README.md](https://github.com/EddieJaoudeCommunity/awesome-github-profiles/workflows/.github/workflows/main.yml/badge.svg)
 
-Test Driven Development(TDD):
-https://sew-tdd.netlify.app/
-
+Wiki Pages:<br>
+[![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/wiki)
+<br>
+Coding Standard:<br>
+[![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/Updated_coding-standard.pdf)
+<br>
+Test Driven Development(TDD) Report:<br>
+[![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://sew-tdd.netlify.app/)
+<br>
+Test Driven Development(TDD) Doc:<br>
+[![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/TDD.pdf)
+<br>
+Documentation Site:<br>
+[![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://documentation-sprint2-th.netlify.app/)
+<br>
 Feel free to submit a [pull request](https://github.com/JU-CSE-27/swe-wiki/pulls) with your suggestions of awesome GitHub profiles.
