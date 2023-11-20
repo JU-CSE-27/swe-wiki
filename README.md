@@ -104,8 +104,18 @@ TDD Doc:<br>
 Documentation Site:<br>
 [![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://documentation-sprint2-th.netlify.app/)
 <br>
+CIR:<br>
+[![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/Continuous_Integration_Report(CIR).pdf)
+<br>
+Contribution Summary:<br>
+[![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/Contribution_Summary.pdf)
+<br>
+
+
 <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/thankyou.png" width="50">
 Special Thanks :green_heart: to our repected supervisor `Dr. Md. Musfique Anwar`
-
 <br>
-Feel free to submit a [pull request](https://github.com/JU-CSE-27/swe-wiki/pulls) with your suggestions of awesome GitHub profiles.
+<br>
+<br>
+
+:thought_balloon: Feel free to submit a <img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/pull.jpg" width="100" > with your valuable suggestions.
