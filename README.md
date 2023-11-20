@@ -104,4 +104,8 @@ TDD Doc:<br>
 Documentation Site:<br>
 [![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://documentation-sprint2-th.netlify.app/)
 <br>
+<img src="https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/thankyou.png" width="50">
+Special Thanks :green_heart: to our repected supervisor `Dr. Md. Musfique Anwar`
+
+<br>
 Feel free to submit a [pull request](https://github.com/JU-CSE-27/swe-wiki/pulls) with your suggestions of awesome GitHub profiles.
